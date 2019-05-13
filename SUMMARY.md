@@ -5,6 +5,6 @@
 * [SQL](sql.md)
 * [UI](ui.md)
 * [Git/Github](gitgithub.md)
-  * git常用命令
+  * [git常用命令](gitgithub/gitchang-yong-ming-ling.md)
 * [GitBook](gitbook.md)
 
