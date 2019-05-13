@@ -1,3 +1,12 @@
-# My Awesome Book
+# My First Book
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+> ### ** 日常的一些总结及所遇到的问题处理的办法！**
+
+### 路漫漫其修远兮，吾将上下而求索^\_^
+
+
+
+
+
+
+
