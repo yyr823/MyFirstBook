@@ -5,8 +5,9 @@
 
 3. [x] 解决办法:
 
-*  从远端库clone项目\(test\)到本地 ,本地把要加入的代码放到本地的库\(test\)下, 然后再提交上去
-*  git pull origin master --allow-unrelated-histories  \(把两段不相干的 分支进行强行合并\)
+* 从远端库clone项目\(test\)到本地 ,本地把要加入的代码放到本地的库\(test\)下, 然后再提交上去
+
+* git pull origin master --allow-unrelated-histories  \(把两段不相干的 分支进行强行合并\)
 
 1. #### 
 
