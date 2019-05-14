@@ -2,15 +2,9 @@
 
 #### [安装Git](#安装git)
 
-####         [在Linux上安装Git](#在linux上安装git)
-
-####        [在Mac OS X上安装Git](#在mac-os-x上安装git)
-
-####  
-
-#### 
-
-#### 
+* #### [在Linux上安装Git](#在linux上安装git)
+* #### [在Mac OS X上安装Git](#在mac-os-x上安装git)
+* #### [在Windows上安装Git](#在windows上安装git)
 
 #### [版本库（Repository）](#版本库（repository）)
 
@@ -64,7 +58,7 @@ sudo apt-get install git
 
 Xcode是Apple官方IDE，功能非常强大，是开发Mac和iOS App的必选装备，而且是免费的！
 
-* #### 在Windows上安装Git
+* #### 在Windows上安装Git {#在windows上安装git}
 
 在Windows上使用Git，可以从Git官网直接[下载安装程序](https://git-scm.com/downloads)，（网速慢请移步[国内镜像](https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fgit)），然后按默认选项安装即可。
 
