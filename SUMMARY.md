@@ -7,5 +7,6 @@
 * [Git/Github](gitgithub.md)
   * [git相关内容](gitgithub/gitxiang-guan-nei-rong.md)
   * [git常用命令](gitgithub/gitchang-yong-ming-ling.md)
+  * [Exception](gitgithub/exception.md)
 * [GitBook](gitbook.md)
 
