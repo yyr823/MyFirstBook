@@ -95,6 +95,14 @@ Git的版本库里存了很多东西，其中最重要的就是称为stage（或
 
 你可以简单理解为，需要提交的文件修改通通放到暂存区，然后，一次性提交暂存区的所有修改。
 
+* 如果文件在工作区被编辑，对应的status状态就是  Changes not staged for commit
+
+* 如果工作区新增文件，则对应的status状态就是  Untracked files
+* 如果文件被add后，对应的status状态就是 Changes to be committed
+* 多次add后的文件都放在暂存区，最后一次性全部提交。提交后的status状态就是  nothing to commit, working tree clean
+
+这时候工作区就是干净的，暂存区就没有任何内容了。
+
 #### 远程仓库 {#远程仓库}
 
 只要注册一个GitHub账号，就可以免费获得Git远程仓库.
