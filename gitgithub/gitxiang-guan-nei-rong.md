@@ -105,11 +105,17 @@ $ ssh-keygen -t rsa - C "youremail@example.com"
 
 当然，GitHub允许你添加多个Key。假定你有若干电脑，你一会儿在公司提交，一会儿在家里提交，只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。最后友情提示，在GitHub上免费托管的Git仓库，任何人都可以看到喔（但只有你自己才能改）。所以，不要把敏感信息放进去。
 
+#### 分支管理
+
+1. ##### [创建与合并分支](https://liaoxuefeng.gitee.io/git-resources/master-and-dev-ff.mp4)
+
 #### 注意小结
 
-1. Git管理的是修改，而不是文件.
+1. Git管理的是修改，而不是文件
 
 2. 每次修改，如果不用`git add`到暂存区，那就不会加入到`commit`中
+
+3. 合并分支时，加上`--no-ff`参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而`fast forward`合并就看不出来曾经做过合并
 
 
 

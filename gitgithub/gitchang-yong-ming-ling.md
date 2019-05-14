@@ -17,9 +17,25 @@
 | git reset HEAD fileName | 把暂存区的修改撤销掉,重新放回工作区 |
 | rm fileName | 删除工作区文件 |
 | git rm fileName | 从版本库删除该文件\(记得删除后进行提交\) |
+| git remote add origin  url | 本地关联远程仓库 |
+| git push -u origin master | 会把本地的master分支内容推送的远程新的master分支,还会把本地的master分支和远程的master分支关联起来 |
+| git clone url | 从github上克隆一个本地库 |
+| git checkout -b  branchName | 创建分支并切换到该分支 |
+| git branch branchName | 创建分支 |
+| git checkout branchName | 切换到该分支下 |
+| git branch | 查看当前分支 |
+| git merge branchName | 合并指定分支到当前分支 |
+| git merge --no-ff   branchName | 合并分支时禁用Fast forward |
+| git branch -d branchName | 删除分支 |
+| git log --graph --pretty=oneline --abbrev-commit | 查看分支合并图 |
+|  |  |
 |  |  |
 
 文件名称+后缀：fileName
+
+github/git上项目的路径\(git@server-name:path/repo-name.git\):url
+
+分支名称:branchName
 
 #### 
 
