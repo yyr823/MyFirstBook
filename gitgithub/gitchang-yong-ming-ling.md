@@ -89,13 +89,9 @@
 | \*_**git blame  \[fileName\]**_ | 查看文件是什么人在什么时间修改过 |
 | \*_**git shortlog -sn**_ | 查看所有提交过的用户，按提交次数排序 |
 
-文件名称：fileName
+文件名称：fileName            github/git上项目的路径\(git@server-name:path/repo-name.git\):url                 
 
-github/git上项目的路径\(git@server-name:path/repo-name.git\):url
-
-分支名称:branchName
-
-标签名称:tagName
+分支名称:branchName         标签名称:tagName
 
 git lg
 
@@ -103,7 +99,7 @@ git lg
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
 
-git fetch \(取回远程仓库的变化，但并不会主动与本地分支合并\)
+##### _**\*git fetch**_ \(取回远程仓库的变化，但并不会主动与本地分支合并,这个比git pull 更安全\)
 
 ```
  //方法一 例子
