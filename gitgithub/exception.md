@@ -1,6 +1,6 @@
 > # Git异常
 
-#### 1fatal:refusing to merge unrelated histories\(拒绝合并不相关的历史\)
+#### 1.fatal:refusing to merge unrelated histories\(拒绝合并不相关的历史\)
 
 * [x] 原因:两个 根本不相干的 git 库, 一个是本地库,一个是远端库, 然后本地要去推送到远端, 远端觉得这个本地库跟自己不相干, 所以告知无法合并
 
