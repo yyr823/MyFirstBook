@@ -81,7 +81,9 @@ $ git config --global user.email "email@example.com"
 
 工作区有一个隐藏目录`.git`，这个不算工作区\(当前项目\)，而是Git的版本库\(这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”.\)
 
-Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支`master`，以及指向`master`的一个指针叫`HEAD` \(表示当前版本，上一个版本就是HEAD^\(可以写为HEAD~1\)，上上一个版本就是HEAD^^^^^\(可以写为HEAD~5\)![](/assets/import.png)
+Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支`master`，以及指向`master`的一个指针叫`HEAD` \(表示当前版本，上一个版本就是HEAD^\(可以写为HEAD~1\)，上上一个版本就是HEAD^^^^^\(可以写为HEAD~5\)\)
+
+![](/assets/import8.png)
 
 我们把文件往Git版本库里添加的时候，是分两步执行的：
 
