@@ -79,7 +79,7 @@ $ git config --global user.email "email@example.com"
 
 #### 版本库（Repository） {#版本库（repository）}
 
-工作区有一个隐藏目录`.git`，这个不算工作区\(当前项目\)，而是Git的版本库\(这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”.\)
+工作区有一个隐藏目录`.git`，这个不算工作区\(.git所在的目录下，除了.git之外的其他文件都是在工作区内\)，而是Git的版本库\(这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”.\)
 
 Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支`master`，以及指向`master`的一个指针叫`HEAD` \(表示当前版本，上一个版本就是HEAD^\(可以写为HEAD~1\)，上上一个版本就是HEAD^^^^^\(可以写为HEAD~5\)\)
 
@@ -98,6 +98,7 @@ Git的版本库里存了很多东西，其中最重要的就是称为stage（或
 * 如果文件在工作区被编辑，对应的status状态就是  Changes not staged for commit
 
 * 如果工作区新增文件，则对应的status状态就是  Untracked files
+
 * 如果文件被add后，对应的status状态就是 Changes to be committed
 * 多次add后的文件都放在暂存区，最后一次性全部提交。提交后的status状态就是  nothing to commit, working tree clean
 
