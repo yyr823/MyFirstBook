@@ -1,5 +1,6 @@
 | 语法 | 描述 |
 | :--- | :--- |
+| git init | 初始化一个Git仓库 |
 | git status | 掌握仓库当前的状态 |
 | git diff  fileName | 查看文件内容不同之处 |
 | git add fileName | 把文件添加到仓库 |
