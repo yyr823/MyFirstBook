@@ -5,7 +5,7 @@
 | git init \[program-name\] | 新建一个目录,将其初始化为git代码库 |
 | \*_**git status**_ | 掌握仓库当前的状态\(还可以在分支合并冲突的时候提示哪个文件冲突\) |
 | \*_**git diff**_ |  |
-| git diff  fileName | 查看文件内容不同之处\(比较工作区和暂存区\[最后一次add\]的区别\) |
+| git diff  \[fileName\] | 查看文件内容不同之处\(比较工作区和暂存区\[最后一次add\]的区别\) |
 | git diff --cached \[fileName\] | 比较暂存区和版本库\(仓库分支里\[上次git commit 后的内容\]\)的区别 |
 | git diff HEAD -- \[fileName\] | 比较工作区和版本库（最后一次commit）的区别 |
 | \*_**git add**_ |  |
