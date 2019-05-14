@@ -2,8 +2,13 @@
 
 #### [安装Git](#安装git)
 
-1. ####   
-2. #### 
+####         [在Linux上安装Git](#在linux上安装git)
+
+####        [在Mac OS X上安装Git](#在mac-os-x上安装git)
+
+####  
+
+#### 
 
 #### 
 
@@ -31,7 +36,7 @@
 
 最早Git是在Linux上开发的，很长一段时间内，Git也只能在Linux和Unix系统上跑。不过，慢慢地有人把它移植到了Windows上。现在，Git可以在Linux、Unix、Mac和Windows这几大平台上正常运行了。要使用Git，第一步当然是安装Git了.
 
-* #### 在Linux上安装Git
+* #### 在Linux上安装Git {#在linux上安装git}
 
 首先，你可以试着输入`git`，看看系统有没有安装Git：
 
@@ -47,7 +52,7 @@ sudo apt-get install git
 
 老一点的Debian或Ubuntu Linux，要把命令改为`sudo apt-get install git-core`，因为以前有个软件也叫GIT（GNU Interactive Tools），结果Git就只能叫`git-core`了。由于Git名气实在太大，后来就把GNU Interactive Tools改成`gnuit`，`git-core`正式改为`git`。如果是其他Linux版本，可以直接通过源码安装。先从Git官网下载源码，然后解压，依次输入：`./config`，`make`，`sudo make install`这几个命令安装就好了。
 
-* #### 在Mac OS X上安装Git
+* #### 在Mac OS X上安装Git {#在mac-os-x上安装git}
 
 如果你正在使用Mac做开发，有两种安装Git的方法。
 
