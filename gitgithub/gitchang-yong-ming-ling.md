@@ -17,7 +17,7 @@
 | git reset HEAD fileName | 把暂存区的修改撤销掉,重新放回工作区 |
 | rm fileName | 删除工作区文件 |
 | git rm fileName | 从版本库删除该文件\(记得删除后进行提交\) |
-| git remote add origin  url | 本地关联远程仓库 |
+| git remote add origin\(可更改名字\)  url | 本地关联远程仓库 |
 | git checkout -b branchName origin/branchName | 创建远程origin下的分支到本地 |
 | git branch --set-upstream-to= origin/branchName   branchName | 创建本地分支和远程分支的链接关系 |
 | git pull | 拉取远程分支 |
@@ -40,9 +40,17 @@
 | git stash apply stash@{0} | 指定恢复的stash |
 | git branch -D branchName | 丢弃一个没有被合并过的分支 |
 | git remote -v | 查看远程库的详细信息 |
+| git remote rm origin | 删除已有的GitHub远程库 |
+| git tag  tagName | 新建一个标签,默认为HEAD |
 | git tag  -a  tagName  -m '备注信息'  commit id | 给该提交id打一个带有说明的标签 -a 指定标签名 -m指定说明文字 |
 | git tag | 查看所有标签 |
 | git show tagName | 查看标签信息 |
+| git tag -d tagName | 删除指定标签 |
+| git push origin tagName | 推送某个标签到远程 |
+| git push origin --tags | 一次性推送全部尚未推送到远程的本地标签 |
+| git push origin --delete tagName | 从远程删除标签\(先从本地删除\) |
+| git config --global color.ui true | git命令显示颜色 |
+| git check-ignore -v fileName | 检查为什么文件不能add,是否是因为定义的忽略规则 |
 |  |  |
 
 文件名称+后缀：fileName
