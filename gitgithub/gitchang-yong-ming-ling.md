@@ -7,6 +7,7 @@
 | git diff HEAD -- fileName | 比较工作区和版本库（最后一次commit）的区别 |
 | git add fileName | 把文件添加到仓库 |
 | git commit -m '备注信息' | 告诉git把文件提交到仓库 |
+| git log -1 | 最近一次的提交 |
 | git log | 显示从最近到最远的提交日志 |
 | git log --pretty=oneline | 简化日志信息输出 |
 | git reset --head HEAD^ | 把当前最新的提交回退上一个版本 |
@@ -51,7 +52,7 @@
 | git push origin --delete tagName | 从远程删除标签\(先从本地删除\) |
 | git config --global color.ui true | git命令显示颜色 |
 | git check-ignore -v fileName | 检查为什么文件不能add,是否是因为定义的忽略规则 |
-|  |  |
+| git config --global alias.st/rh  status/'reset HEAD' | 配置别名 \(git st/rh fileName\) |
 
 文件名称+后缀：fileName
 
@@ -61,7 +62,11 @@ github/git上项目的路径\(git@server-name:path/repo-name.git\):url
 
 标签名称:tagName
 
-#### 
+ git lg 
+
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
 
 
 
