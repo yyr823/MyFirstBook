@@ -62,7 +62,7 @@ github/git上项目的路径\(git@server-name:path/repo-name.git\):url
 
 标签名称:tagName
 
- git lg 
+git lg
 
 ```
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
