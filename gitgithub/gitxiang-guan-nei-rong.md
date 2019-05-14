@@ -14,7 +14,11 @@
 
 #### [注意小结](#注意小结)
 
-#### 
+#### 参考文档:
+
+1.[廖雪峰-git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+
+2..[git学习（廖雪峰版教程）](http://note.youdao.com/noteshare?id=4653994abae090b764e7fb65a039a7fe&sub=4B72DD531A444C5E97EB28F6A969D01D)
 
 #### 集中式vs分布式 {#集中式vs分布式}
 
