@@ -57,11 +57,13 @@
 | git checkout -b  branchName | 创建分支并切换到该分支 |
 | git branch branchName | 创建分支 |
 | git checkout branchName | 切换到该分支下 |
-| git branch | 查看当前分支 |
+| git branch | 查看当前所包含的分支 |
 | git merge branchName | 合并指定分支到当前分支 |
 | git merge --no-ff   branchName | 合并分支时禁用Fast forward |
 | git branch -d branchName | 删除分支 |
-|  |  |
+| git branch -D \[branchName\] | 强制删除一个还没有合并（已经commit）的分支 |
+| git branch -a | 列出所有本地分支和远程分支 |
+| git branch -r | 列出所有远程分支 |
 | _**git rebase**_ | 把本地未push的分叉提交整理成直线 |
 | _**git stash**_ |  |
 | git stash | 把当前工作现场'储藏起来',只能'储藏' git add过的文件 |
@@ -70,7 +72,6 @@
 | git stash pop | 恢复工作现场并删除stash内容 |
 | git stash list | 查看stash 内容 |
 | git stash apply stash@{0} | 指定恢复的stash |
-| git branch -D branchName | 丢弃一个没有被合并过的分支 |
 | _**git tag**_ |  |
 | git tag  tagName | 新建一个标签,默认为HEAD |
 | git tag  -a  tagName  -m '备注信息'  commit id | 给该提交id打一个带有说明的标签 -a 指定标签名 -m指定说明文字 |
