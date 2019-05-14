@@ -89,7 +89,7 @@
 | \*_**git blame  \[fileName\]**_ | 查看文件是什么人在什么时间修改过 |
 | \*_**git shortlog -sn**_ | 查看所有提交过的用户，按提交次数排序 |
 
-文件名称：fileName            github/git上项目的路径\(git@server-name:path/repo-name.git\):url                 
+文件名称：fileName            github/git上项目的路径\(git@server-name:path/repo-name.git\):url
 
 分支名称:branchName         标签名称:tagName
 
