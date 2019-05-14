@@ -107,7 +107,8 @@ $ ssh-keygen -t rsa - C "youremail@example.com"
 
 #### 分支管理
 
-1. ##### [创建与合并分支](https://liaoxuefeng.gitee.io/git-resources/master-and-dev-ff.mp4)
+1. ##### [**每次提交**](/ http://liaoxuefeng.gitee.io/git-resources/master-branch-forward.mp4)
+2. ##### [创建与合并分支](https://liaoxuefeng.gitee.io/git-resources/master-and-dev-ff.mp4)
 
 #### 注意小结
 
@@ -119,19 +120,21 @@ $ ssh-keygen -t rsa - C "youremail@example.com"
 
 4. 多人协作的工作模式通常是这样：
 
-   1. 首先，可以试图用`git push origin <branch-name>`推送自己的修改；
+   1. 首先，可以试图用`git push origin <branch-name>`推送自己的修改
 
-   2. 如果推送失败，则因为远程分支比你的本地更新，需要先用`git pull`试图合并；
+   2. 如果推送失败，则因为远程分支比你的本地更新，需要先用`git pull`试图合并
 
-   3. 如果合并有冲突，则解决冲突，并在本地提交；
+   3. 如果合并有冲突，则解决冲突，并在本地提交
 
-   4. 没有冲突或者解决掉冲突后，再用`git push origin <branch-name>`推送就能成功！
+   4. 没有冲突或者解决掉冲突后，再用`git push origin <branch-name>`推送就能成功
 
-   如果`git pull`提示`no tracking information`，则说明本地分支和远程分支的链接关系没有创建，用命令`git branch --set-upstream-to= origin/<branch-name> <branch-name>`
+   5. 如果`git pull`提示`no tracking information`，则说明本地分支和远程分支的链接关系没有创建，用命令`git branch --set-upstream-to= origin/<branch-name> <branch-name>`
 
 5. 标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签
 
-6. 忽略某些文件时，需要编写`.gitignore`该文件本身要放到版本库里，并且可以对`.gitignore`做版本管理.
+6. 忽略某些文件时，需要编写`.gitignore`该文件本身要放到版本库里，并且可以对`.gitignore`做版本管理
+
+7. 配置Git的时候，加上`--global`是针对当前用户\(用户主目录下.gitconfig文件\)起作用的，如果不加，那只针对当前的仓库起作用。每个仓库的Git配置文件都放在`.git/config`文件中
 
 
 
