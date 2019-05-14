@@ -20,7 +20,7 @@
 | git remote add origin  url | 本地关联远程仓库 |
 | git checkout -b branchName origin/branchName | 创建远程origin下的分支到本地 |
 | git branch --set-upstream-to= origin/branchName   branchName | 创建本地分支和远程分支的链接关系 |
-| git pull  | 拉取远程分支 |
+| git pull | 拉取远程分支 |
 | git push -u origin master | 会把本地的master分支内容推送的远程新的master分支,还会把本地的master分支和远程的master分支关联起来 |
 | git clone url | 从github上克隆一个本地库 |
 | git checkout -b  branchName | 创建分支并切换到该分支 |
@@ -30,6 +30,7 @@
 | git merge branchName | 合并指定分支到当前分支 |
 | git merge --no-ff   branchName | 合并分支时禁用Fast forward |
 | git branch -d branchName | 删除分支 |
+| git rebase | 把本地未push的分叉提交整理成直线 |
 | git log --graph --pretty=oneline --abbrev-commit | 查看分支合并图 |
 | git stash | 把当前工作现场'储藏起来' |
 | git stash apply | 恢复工作现场 |
@@ -39,7 +40,9 @@
 | git stash apply stash@{0} | 指定恢复的stash |
 | git branch -D branchName | 丢弃一个没有被合并过的分支 |
 | git remote -v | 查看远程库的详细信息 |
-|  |  |
+| git tag  -a  tagName  -m '备注信息'  commit id | 给该提交id打一个带有说明的标签 -a 指定标签名 -m指定说明文字 |
+| git tag | 查看所有标签 |
+| git show tagName | 查看标签信息 |
 |  |  |
 
 文件名称+后缀：fileName
@@ -47,6 +50,8 @@
 github/git上项目的路径\(git@server-name:path/repo-name.git\):url
 
 分支名称:branchName
+
+标签名称:tagName
 
 #### 
 

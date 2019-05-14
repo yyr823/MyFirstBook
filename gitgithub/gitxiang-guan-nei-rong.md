@@ -129,5 +129,7 @@ $ ssh-keygen -t rsa - C "youremail@example.com"
 
    如果`git pull`提示`no tracking information`，则说明本地分支和远程分支的链接关系没有创建，用命令`git branch --set-upstream-to= origin/<branch-name> <branch-name>`
 
+5. 标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签
+
 
 
