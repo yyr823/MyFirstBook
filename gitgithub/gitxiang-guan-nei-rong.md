@@ -152,5 +152,9 @@ $ ssh-keygen -t rsa - C "youremail@example.com"
 
 7. 配置Git的时候，加上`--global`是针对当前用户\(用户主目录下.gitconfig文件\)起作用的，如果不加，那只针对当前的仓库起作用。每个仓库的Git配置文件都放在`.git/config`文件中
 
+8. 如果MERGE\(合并\)出现冲突， 则解决冲突以后必须：git add - &gt; git commit
+
+9. 禁用FAST forward模式,Git就会在MERGE时生成一个新的COMMIT，这样，从分支历史上就可以看出分支信息
+
 
 
