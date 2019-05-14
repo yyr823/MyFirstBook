@@ -21,7 +21,7 @@
 | git log -n | 查看最近n次的提交信息\(n=1 即最近一次的提交\) |
 | git log | 显示从最近到最远的提交日志 |
 | git log --pretty=oneline | 简化日志信息输出\(单行模式\) |
-| git log --stat  | 查看commit历史，以及每次commit发生变更的文件 |
+| git log --stat | 查看commit历史，以及每次commit发生变更的文件 |
 | git log --graph --pretty=oneline  --abbrev-commit | 查看分支合并图 |
 | _**git reset**_ |  |
 | git reset  fileName | 重置暂存区的指定文件，与上一次commit保持一致，工作区不变 |
@@ -45,14 +45,15 @@
 | git remote rm \[remote\] | 删除远程库 |
 | _**git branch --set-upstream-to= \[remote\]/branchName   branchName**_ | 创建本地分支和远程分支的链接关系 |
 | _**git pull**_ | 拉取远程分支 |
+| _**git push**_ |  |
 | git push -u \[remote\] master | 会把本地的master分支内容推送的远程新的master分支,还会把本地的master分支和远程的master分支关联起来\(git给远程库起的默认名称是origin\) |
 | git push \[remote\] master | 将主分支推送到远程库 |
 | git push \[remote\] \[branchName\] | 将\(\[branch\]\)分支推送到远程库 |
 | git push \[remote\] --delete \[branch\] | 删除远程分支 |
 | git push \[remote\] \[tagname\] | 推送某个标签到远程 |
 | git push \[remote\] --tags | 一次性推送全部尚未推送到远程的本地标签 |
-|  |  |
-| git clone url | 从github上克隆一个本地库 |
+| _**git clone url**_ | 从github上克隆一个本地库 |
+| _**branch**_ |  |
 | git checkout -b  branchName | 创建分支并切换到该分支 |
 | git branch branchName | 创建分支 |
 | git checkout branchName | 切换到该分支下 |
@@ -60,22 +61,23 @@
 | git merge branchName | 合并指定分支到当前分支 |
 | git merge --no-ff   branchName | 合并分支时禁用Fast forward |
 | git branch -d branchName | 删除分支 |
-| git rebase | 把本地未push的分叉提交整理成直线 |
-| git stash | 把当前工作现场'储藏起来' |
-| git stash apply | 恢复工作现场 |
+|  |  |
+| _**git rebase**_ | 把本地未push的分叉提交整理成直线 |
+| _**git stash**_ |  |
+| git stash | 把当前工作现场'储藏起来',只能'储藏' git add过的文件 |
+| git stash apply | 恢复工作现场\(stash内容并不删除\) |
 | git stash drop | 删除stash 内容 |
 | git stash pop | 恢复工作现场并删除stash内容 |
 | git stash list | 查看stash 内容 |
 | git stash apply stash@{0} | 指定恢复的stash |
 | git branch -D branchName | 丢弃一个没有被合并过的分支 |
+| _**git tag**_ |  |
 | git tag  tagName | 新建一个标签,默认为HEAD |
 | git tag  -a  tagName  -m '备注信息'  commit id | 给该提交id打一个带有说明的标签 -a 指定标签名 -m指定说明文字 |
 | git tag | 查看所有标签 |
 | git show tagName | 查看标签信息 |
 | git tag -d tagName | 删除指定标签 |
-| git push origin tagName | 推送某个标签到远程 |
-| git push origin --tags | 一次性推送全部尚未推送到远程的本地标签 |
-| git push origin --delete tagName | 从远程删除标签\(先从本地删除\) |
+| git push \[remote\] --delete tagName | 删除远程指定标签\(先删除本地标签\) |
 | git config --global color.ui true | git命令显示颜色 |
 | git check-ignore -v fileName | 检查为什么文件不能add,是否是因为定义的忽略规则 |
 | git config --global alias.st/rh  status/'reset HEAD' | 配置别名 \(git st/rh fileName\) |
