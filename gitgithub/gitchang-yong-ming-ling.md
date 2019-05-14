@@ -18,6 +18,9 @@
 | rm fileName | 删除工作区文件 |
 | git rm fileName | 从版本库删除该文件\(记得删除后进行提交\) |
 | git remote add origin  url | 本地关联远程仓库 |
+| git checkout -b branchName origin/branchName | 创建远程origin下的分支到本地 |
+| git branch --set-upstream-to= origin/branchName   branchName | 创建本地分支和远程分支的链接关系 |
+| git pull  | 拉取远程分支 |
 | git push -u origin master | 会把本地的master分支内容推送的远程新的master分支,还会把本地的master分支和远程的master分支关联起来 |
 | git clone url | 从github上克隆一个本地库 |
 | git checkout -b  branchName | 创建分支并切换到该分支 |
@@ -28,6 +31,14 @@
 | git merge --no-ff   branchName | 合并分支时禁用Fast forward |
 | git branch -d branchName | 删除分支 |
 | git log --graph --pretty=oneline --abbrev-commit | 查看分支合并图 |
+| git stash | 把当前工作现场'储藏起来' |
+| git stash apply | 恢复工作现场 |
+| git stash drop | 删除stash 内容 |
+| git stash pop | 恢复工作现场并删除stash内容 |
+| git stash list | 查看stash 内容 |
+| git stash apply stash@{0} | 指定恢复的stash |
+| git branch -D branchName | 丢弃一个没有被合并过的分支 |
+| git remote -v | 查看远程库的详细信息 |
 |  |  |
 |  |  |
 
