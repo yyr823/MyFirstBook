@@ -24,8 +24,8 @@ IntelliJ IDEA 快捷键
 | Ctrl + Alt + O | 优化Imports（去掉不必要的） |
 | Ctrl + Alt + I | 代码自动对齐 |
 | Tab / Shift + Tab | 缩进/反缩进所选行 |
-| Ctrl+XorShift+Delete | 剪切行/代码块到剪贴板\(默认全选一行\) |
-| Ctrl+CorCtrl+Insert | 复制行/代码块到剪贴板\(默认全选一行\) |
+| Ctrl+X or Shift+Delete | 剪切行/代码块到剪贴板\(默认全选一行\) |
+| Ctrl+C or Ctrl+Insert | 复制行/代码块到剪贴板\(默认全选一行\) |
 | Ctrl+VorShift+Insert | 粘贴剪贴板中的内容 |
 | Ctrl+Shift + V | 粘贴剪贴板中缓存的内容 |
 | Ctrl+D | 复制当前行/代码块的一个副本并插入到内容中 |
