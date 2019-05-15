@@ -16,6 +16,6 @@
   * [git常用命令](gitgithub/gitchang-yong-ming-ling.md)
   * [Exception](gitgithub/exception.md)
     * [fatal:refusing to merge unrelated histories](gitgithub/exception/fatalrefusing-to-merge-unrelated-histories.md)
-    * fatal:failed to push some refs to 'git@github.com
+    * [fatal:failed to push some refs to 'git@github.com](gitgithub/exception/fatalfailed-to-push-some-refs-to-gitgithubcom.md)
 * [GitBook](gitbook.md)
 
