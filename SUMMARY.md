@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [JAVA](chapter1.md)
+  * [SpringDataJpa](chapter1/springdatajpa.md)
 * [SQL](sql.md)
 * [UI](ui.md)
 * [Git/Github](gitgithub.md)
