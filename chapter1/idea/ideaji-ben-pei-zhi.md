@@ -1,8 +1,6 @@
 **1、配置编码问题**
 
-![](file:///C:\Users\18397\AppData\Local\Temp\ksohtml40408\wps1.jpg)
-
-![](file:///C:\Users\18397\AppData\Local\Temp\ksohtml40408\wps2.jpg)
+![](/assets/图片1.png)![](/assets/图片2.png)
 
 **2、显示工具栏以及工具按钮栏**
 
@@ -107,6 +105,4 @@ Ctrl+N ：快速查找文件
 Alt + F1 ：快速定位文件在那个位置
 
 ![](file:///C:\Users\18397\AppData\Local\Temp\ksohtml40408\wps32.jpg)
-
-
 
