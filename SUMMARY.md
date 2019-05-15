@@ -7,9 +7,9 @@
     * [@requestbody接收json参数 映射到 实体类中 Date（时间日期）类型转换问题](chapter1/springdatajpa/requestbodyjie-shou-json-can-shu-ying-she-dao-shi-ti-lei-zhong-date-ff08-shi-jian-ri-qi-ff09-lei-xing-zhuan-huan-wen-ti.md)
   * [集合](chapter1/ji-he.md)
     * [将集合转换成字符串\(反之\)](chapter1/ji-he/jiang-ji-he-zhuan-huan-cheng-zi-fu-chuan.md)
-  * [IDEA快捷键](chapter1/ideakuai-jie-jian.md)
   * [IDEA](chapter1/idea.md)
     * IDEA基本配置
+  * [IDEA快捷键](chapter1/ideakuai-jie-jian.md)
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
