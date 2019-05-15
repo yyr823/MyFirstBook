@@ -8,6 +8,7 @@
   * [集合](chapter1/ji-he.md)
     * [将集合转换成字符串\(反之\)](chapter1/ji-he/jiang-ji-he-zhuan-huan-cheng-zi-fu-chuan.md)
   * [IDEA快捷键](chapter1/ideakuai-jie-jian.md)
+  * IDEA
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
