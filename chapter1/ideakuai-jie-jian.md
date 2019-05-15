@@ -133,7 +133,7 @@ IntelliJ IDEA 快捷键
 | itli | 遍历java.util.List集合的元素 |
 | psf | public static final |
 | thr | throw new |
-| ==&gt; | 更多Live模板查看：Settings—Editor—Live Templates |
+|  | 更多Live模板查看：Settings—Editor—Live Templates |
 | [_**\*通用快捷键**_](/通用快捷键) |  |
 | Alt + \#\[0-9\] | 打开相对应的工具窗口 |
 | Ctrl + S | 保存全部 |
