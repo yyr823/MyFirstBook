@@ -108,7 +108,6 @@ background-clip:padding-box;/*背景被裁剪到内边距框*/
 background-color:#f78d1d;/*背景颜色*/
 
 }
-
 ```
 
 * #### [css属性访问链接](https://www.runoob.com/cssref/css-reference.html)
