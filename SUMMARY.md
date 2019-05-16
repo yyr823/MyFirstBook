@@ -5,6 +5,7 @@
   * [Question](chapter1/springdatajpa.md)
     * [保存时间比当前时间少8小时](chapter1/springdatajpa/bao-cun-shi-jian-bi-dang-qian-shi-jian-shao-8-xiao-shi.md)
     * [@requestbody接收json参数 映射到 实体类中 Date（时间日期）类型转换问题](chapter1/springdatajpa/requestbodyjie-shou-json-can-shu-ying-she-dao-shi-ti-lei-zhong-date-ff08-shi-jian-ri-qi-ff09-lei-xing-zhuan-huan-wen-ti.md)
+    * [ArrayList循环遍历并删除元素的常见陷阱](chapter1/springdatajpa/arraylistxun-huan-bian-li-bing-shan-chu-yuan-su-de-chang-jian-xian-jing.md)
   * [集合](chapter1/ji-he.md)
     * [将集合转换成字符串\(反之\)](chapter1/ji-he/jiang-ji-he-zhuan-huan-cheng-zi-fu-chuan.md)
   * [IDEA](chapter1/idea.md)
