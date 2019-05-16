@@ -20,6 +20,8 @@
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
     * [Case when then end](sql/mysql/case-when-then-end.md)
 * [UI](ui.md)
+  * Jquery
+  * LayUI
 * [Git/Github](gitgithub.md)
   * [git相关内容](gitgithub/gitxiang-guan-nei-rong.md)
   * [git常用命令](gitgithub/gitchang-yong-ming-ling.md)
