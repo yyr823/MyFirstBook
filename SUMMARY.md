@@ -20,7 +20,8 @@
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
     * [Case when then end](sql/mysql/case-when-then-end.md)
 * [UI](ui.md)
-  * Jquery
+  * [Jquery](ui/jquery.md)
+    * [table勾选复选框tr变色](ui/jquery/tablegou-xuan-fu-xuan-kuang-zuo-ge-xing-bian-se.md)
   * LayUI
 * [Git/Github](gitgithub.md)
   * [git相关内容](gitgithub/gitxiang-guan-nei-rong.md)
