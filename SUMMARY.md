@@ -13,6 +13,7 @@
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
+    * [Case when then end](sql/mysql/case-when-then-end.md)
 * [UI](ui.md)
 * [Git/Github](gitgithub.md)
   * [git相关内容](gitgithub/gitxiang-guan-nei-rong.md)
