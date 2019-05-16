@@ -30,8 +30,7 @@ public class ArrayListRemove
 ```
 
 * #### 操作：想删除list的b字符
-
-1. **错误例子1：**
+* **错误例子1：**
 
 ```
 public static void remove(ArrayList<String> list)
@@ -117,7 +116,7 @@ public static void remove(ArrayList<String> list)
 }
 ```
 
-* 效果：这种for-each写法会报出著名的并发修改异常：_**`java.util.ConcurrentModificationException`**_
+* 效果：这种for-each写法会报出著名的并发修改异常：`java.util.ConcurrentModificationException`
 
 * 原因：
 
@@ -156,7 +155,7 @@ final void checkForComodification() {
 
 **这里会做迭代器内部修改次数检查，因为上面的remove\(Object\)方法修改了modCount的值，所以才会报出并发修改异常。**
 
-* 针对这种情况可以在使用迭代器迭代时（显示或for-each的隐式）不要使用ArrayList的remove,改为用_**`Iterator的remove`**_的方式来避免:
+* 针对这种情况可以在使用迭代器迭代时（显示或for-each的隐式）不要使用ArrayList的remove,改为用**`Iterator`**`的`**`remove`**的方式来避免:
 
 ```
 public static void remove(ArrayList<String> list) 
@@ -172,14 +171,6 @@ public static void remove(ArrayList<String> list)
         }
 }
 ```
-
-
-
-
-
-
-
-
 
 
 
