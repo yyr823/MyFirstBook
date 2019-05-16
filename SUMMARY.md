@@ -25,6 +25,7 @@
   * LayUI
   * [Css](ui/css.md)
     * [CSS使图片居中的三种方法](ui/css/cssshi-tu-pian-ju-zhong-de-san-zhong-fang-fa.md)
+    * 设置按钮的样式
 * [Git/Github](gitgithub.md)
   * [git相关内容](gitgithub/gitxiang-guan-nei-rong.md)
   * [git常用命令](gitgithub/gitchang-yong-ming-ling.md)
