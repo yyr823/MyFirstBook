@@ -11,7 +11,7 @@
     * [IDEA基本配置](chapter1/idea/ideaji-ben-pei-zhi.md)
     * [IDEA快捷键](chapter1/idea/ideakuai-jie-jian.md)
     * [Questions](chapter1/idea/questions.md)
-      * IDEA下lombok安装，以及找不到get,set的问题
+      * [IDEA下lombok安装,@Data get,set找不到的问题](chapter1/idea/questions/ideaxia-lombok-an-zhuang-ff0c-yi-ji-zhao-bu-dao-get-set-de-wen-ti.md)
   * [Exception](chapter1/exception.md)
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
