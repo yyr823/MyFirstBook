@@ -22,7 +22,7 @@
 * [UI](ui.md)
   * [Jquery](ui/jquery.md)
     * [table勾选复选框tr变色](ui/jquery/tablegou-xuan-fu-xuan-kuang-zuo-ge-xing-bian-se.md)
-  * LayUI
+  * [LayUI](ui/layui.md)
   * [Css](ui/css.md)
     * [CSS使图片居中的三种方法](ui/css/cssshi-tu-pian-ju-zhong-de-san-zhong-fang-fa.md)
     * [设置按钮的样式](ui/css/she-zhi-an-niu-de-yang-shi.md)
