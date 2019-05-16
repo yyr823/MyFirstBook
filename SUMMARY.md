@@ -10,7 +10,7 @@
   * [IDEA](chapter1/idea.md)
     * [IDEA基本配置](chapter1/idea/ideaji-ben-pei-zhi.md)
     * [IDEA快捷键](chapter1/idea/ideakuai-jie-jian.md)
-  * Exception
+  * [Exception](chapter1/exception.md)
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
