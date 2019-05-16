@@ -11,9 +11,7 @@
 private Date startTime;
 ```
 
-1. [ ] pattern 指定转化的格式
-2. [ ] locale  主要指语言，如果中文的话，月份输出是五月，但是英文就是May
-3. [ ] timezone主要解决“8小时”问题\(时区问题\)
-
-
+1. [x] pattern 指定转化的格式
+2. [x] locale  主要指语言，如果中文的话，月份输出是五月，但是英文就是May
+3. [x] timezone主要解决“8小时”问题\(时区问题\)
 
