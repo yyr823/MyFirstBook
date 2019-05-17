@@ -21,7 +21,7 @@
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
     * [Case when then end](sql/mysql/case-when-then-end.md)
   * [连接数据库常用配置](sql/lian-jie-shu-ju-ku-chang-yong-pei-zhi.md)
-  * 常用语法
+  * [常用语法](sql/chang-yong-yu-fa.md)
 * [UI](ui.md)
   * [Jquery](ui/jquery.md)
     * [table勾选复选框tr变色](ui/jquery/tablegou-xuan-fu-xuan-kuang-zuo-ge-xing-bian-se.md)
