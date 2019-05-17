@@ -8,6 +8,7 @@
     * [ArrayList循环遍历并删除元素的常见陷阱](chapter1/springdatajpa/arraylistxun-huan-bian-li-bing-shan-chu-yuan-su-de-chang-jian-xian-jing.md)
   * [集合](chapter1/ji-he.md)
     * [将集合转换成字符串\(反之\)](chapter1/ji-he/jiang-ji-he-zhuan-huan-cheng-zi-fu-chuan.md)
+    * [快速初始化list和map](chapter1/ji-he/kuai-su-chu-shi-hua-list-he-map.md)
   * [IDEA](chapter1/idea.md)
     * [IDEA基本配置](chapter1/idea/ideaji-ben-pei-zhi.md)
     * [IDEA快捷键](chapter1/idea/ideakuai-jie-jian.md)
