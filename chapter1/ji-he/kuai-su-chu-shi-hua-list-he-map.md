@@ -29,7 +29,7 @@ public static void main(String[] args) {
                put("下班", "开心");
             }
 
-        } );
+        });
 
     }
 ```
