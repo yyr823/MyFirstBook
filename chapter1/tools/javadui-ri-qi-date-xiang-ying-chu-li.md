@@ -10,7 +10,7 @@ import java.util.Date;
 public class DateFormat {
 
 /**
-     * <功能描述：时间相减得到天数
+     * 补充:功能描述：时间相减得到天数
      * @param beginDateStr
      * @param endDateStr
      * @return
