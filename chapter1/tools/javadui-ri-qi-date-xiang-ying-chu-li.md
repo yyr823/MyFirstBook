@@ -2,15 +2,15 @@
 
 ```java
 package com.data.utils;
- 
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
- 
+
 public class DateFormat {
 
 /**
-     * <li功能描述：时间相减得到天数
+     * <功能描述：时间相减得到天数
      * @param beginDateStr
      * @param endDateStr
      * @return
@@ -39,12 +39,12 @@ public class DateFormat {
 
 
 
- 
+
  /**
   * 日期减几年
   */
  public static String dateMinusYear(String str) throws Exception {
- 
+
   SimpleDateFormat sdf = new SimpleDateFormat("yyyyMM");
   Date dt = sdf.parse(str);
   Calendar rightNow = Calendar.getInstance();
@@ -54,12 +54,12 @@ public class DateFormat {
   String reStr = sdf.format(dt1);
   return reStr;
  }
- 
+
  /**
   * 日期加几年
   */
  public static String dateAddYear(String str) throws Exception {
- 
+
   SimpleDateFormat sdf = new SimpleDateFormat("yyyyMM");
   Date dt = sdf.parse(str);
   Calendar rightNow = Calendar.getInstance();
@@ -69,12 +69,12 @@ public class DateFormat {
   String reStr = sdf.format(dt1);
   return reStr;
  }
- 
+
  /**
   * 日期减几月
   */
  public static String dateMinusMonth(String str) throws Exception {
- 
+
   SimpleDateFormat sdf = new SimpleDateFormat("yyyyMM");
   Date dt = sdf.parse(str);//将字符串生成Date
   Calendar rightNow = Calendar.getInstance();
@@ -84,12 +84,12 @@ public class DateFormat {
   String reStr = sdf.format(dt1);//将给定的 Date 格式化为日期/时间字符串，并将结果添加到给定的 StringBuffer。
   return reStr;
  }
- 
+
  /**
   * 日期加几月
   */
  public static String dateAddMonth(String str) throws Exception {
- 
+
   SimpleDateFormat sdf = new SimpleDateFormat("yyyyMM");
   Date dt = sdf.parse(str);
   Calendar rightNow = Calendar.getInstance();
@@ -100,7 +100,7 @@ public class DateFormat {
   String reStr = sdf.format(dt1);
   return reStr;
  }
- 
+
  /**
   * 获取当前年月的第一个月的str
   * @param str
@@ -109,32 +109,32 @@ public class DateFormat {
   * @throws Exception
   */
  public static String dateOneMonth(String str) {
- 
+
   str = str.substring(0, str.length() - 2);
   str = str + "01";
   return str;
  }
- 
+
  /**
   * 算出所选月份距离一月份有几个月。
   * @param str 201509
   * @return 9
   */
  public static int dateDistanceMonth(String str) {
- 
+
   int i = Integer.parseInt(str);
   int j = Integer.parseInt(DateFormat.dateOneMonth(str));
   System.out.println(i - j);
   return i - j + 1;
  }
- 
+
  /**
   * 获取两个时间的时间差，精确到毫秒
   * @param str
   * @return
   */
  public static String TimeDifference(long start, long end) {
- 
+
   long between = end - start;
   long day = between / (24 * 60 * 60 * 1000);
   long hour = (between / (60 * 60 * 1000) - day * 24);
@@ -147,7 +147,7 @@ public class DateFormat {
   return timeDifference;
  }
 }
- 
+
  /**
   * 获取24小时、一周、一个月的起始时间
   * 
@@ -184,8 +184,8 @@ public class DateFormat {
   }
   return null;
  }
- 
- 
+
+
  /**
   * 获取24小时、一周、一个月的结束时间
   * 
@@ -225,9 +225,9 @@ public class DateFormat {
   }
   return null;
  }
- 
- 
- 
+
+
+
  /**
   * 判断dateStr是否在start和end中间，start和end都可以为null yyyyMMddHHmmss或者yyyyMMdd格式
   * 
@@ -251,14 +251,14 @@ public class DateFormat {
    sdf = new SimpleDateFormat("yyyyMMdd");
   } else
    return false;
- 
+
   try {
    // 更改判断日期格式
    date = sdf.parse(dateStr);
   } catch (ParseException e) {
    log.error(e, e);
   }
- 
+
   if ((start == null) && (end != null)) {
    try {
     endDate = sdf.parse(end);
@@ -295,8 +295,8 @@ public class DateFormat {
   }
   return isDateRight;
  }
- 
- 
+
+
  /**
   * 判断dateStr是否在start和end中间，start和end都可以为null long形格式
   * 
@@ -312,9 +312,9 @@ public class DateFormat {
   long date = -1;
   long fromDate = -1;
   long toDate = -1;
- 
+
   date = java.lang.Long.parseLong(dateStr);
- 
+
   if ((start == null) && (end == null)) {
    isDateRight = true;
   } else if ((start == null) && (end != null)) {
@@ -332,7 +332,7 @@ public class DateFormat {
    } catch (NumberFormatException nfe) {
     log.error(nfe, nfe);
    }
- 
+
    if (date >= fromDate) {
     isDateRight = true;
    }
@@ -343,15 +343,13 @@ public class DateFormat {
    } catch (NumberFormatException nfe) {
     log.error(nfe, nfe);
    }
- 
+
    if ((date <= toDate) && (date >= fromDate)) {
     isDateRight = true;
    }
   }
   return isDateRight;
  }
- 
-
 ```
 
 
