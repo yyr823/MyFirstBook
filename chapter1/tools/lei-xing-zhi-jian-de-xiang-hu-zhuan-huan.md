@@ -8,8 +8,8 @@
  float c=  Float.parseFloat(String s);
  double d= Double.parseDouble(String s) 
  //方法二
-int   a  = Integer.valueOf(s).intValue();   
-float c  = Float.valueOf(s).floatValue();
+ int   a  = Integer.valueOf(s).intValue();   
+ float c  = Float.valueOf(s).floatValue();
 ```
 
 * Integer.parseInt\(String s\)生成的是一个整形
@@ -20,7 +20,7 @@ float c  = Float.valueOf(s).floatValue();
 
 ```java
 int i=11;
-  float b=2.5f;
+float b=2.5f;
      //方法一
     String s=i+"";
     //方法二
