@@ -9,7 +9,7 @@
  double d= Double.parseDouble(String s) 
  //方法二
 int   a  = Integer.valueOf(s).intValue();   
-float c  = Float.valueOf(s).floatValue(); 
+float c  = Float.valueOf(s).floatValue();
 ```
 
 * Integer.parseInt\(String s\)生成的是一个整形
