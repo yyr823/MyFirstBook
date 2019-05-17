@@ -104,11 +104,11 @@ SELECT * FROM table_name   WHERE YEARWEEK(date_format(create_time,'%Y-%m-%d')) =
 select * from table_name  where create_time between date_sub(NOW(),interval 6 MONTH) and NOW();
 ```
 
-* [ ] 日期：CURDATE\(\)= DATE\(NOW\(\)\)
+* [x] 日期：CURDATE\(\)= DATE\(NOW\(\)\)
 
-* [ ] 日期+时间：NOW\(\)
+* [x] 日期+时间：NOW\(\)
 
-* [ ] 时间：CURTIME\(\)=TIME\(NOW\(\)\)
+* [x] 时间：CURTIME\(\)=TIME\(NOW\(\)\)
 
 
 
