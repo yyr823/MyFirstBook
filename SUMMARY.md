@@ -23,7 +23,7 @@
       * [No primary or default constructor found for interface java.util.List](chapter1/springboot/exception/no-primary-or-default-constructor-found-for-interface-javautillist.md)
   * [Tools](chapter1/tools.md)
     * [Java对日期Date相应处理](chapter1/tools/javadui-ri-qi-date-xiang-ying-chu-li.md)
-    * [类型的转换](chapter1/tools/lei-xing-de-zhuan-huan.md)
+    * [Java类型的转换](chapter1/tools/lei-xing-de-zhuan-huan.md)
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
