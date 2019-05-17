@@ -18,6 +18,8 @@
     * [您的主机中的软件中止了一个已建立的连接](chapter1/exception/nin-de-zhu-ji-zhong-de-ruan-jian-zhong-zhi-le-yi-ge-yi-jian-li-de-lian-jie.md)
   * [SpringBoot](chapter1/springboot.md)
     * [application.properties常用设置](chapter1/springboot/applicationpropertieschang-yong-she-zhi.md)
+    * [Exception](chapter1/springboot/exception.md)
+      * No primary or default constructor found for interface java.util.List
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
