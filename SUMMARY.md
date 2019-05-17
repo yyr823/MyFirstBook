@@ -45,5 +45,6 @@
     * [fatal:refusing to merge unrelated histories](gitgithub/exception/fatalrefusing-to-merge-unrelated-histories.md)
     * [fatal:failed to push some refs to 'git@github.com](gitgithub/exception/fatalfailed-to-push-some-refs-to-gitgithubcom.md)
     * [Everything up-to-date](gitgithub/exception/everything-up-to-date.md)
+    * You have not concluded your merge \(MERGE\_HEAD exists\)
 * [GitBook](gitbook.md)
 
