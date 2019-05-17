@@ -6,26 +6,32 @@
 
 ```java
 public static void main(String[] args) {
- 
-		List<String> list = new ArrayList<String>(){
-			{add("str01"); add("str02");}
-			};
-		System.out.println("list=="+list);
-		
-	}
+
+        List<String> list = new ArrayList<String>(){
+            {
+               add("周一");
+               add("周五");
+             }
+            };
+        System.out.println("list=="+list);
+
+    }
 ```
 
 > Map
 
 ```java
 public static void main(String[] args) {
-		System.out.println(
-			new HashMap<String, Object>(){
-			{put("name", "香港");put("value", "");}
-			
-		} );
- 
-	}
+        System.out.println(
+            new HashMap<String, Object>(){
+            {
+               put("上班", "不开心");
+               put("下班", "开心");
+            }
+
+        } );
+
+    }
 ```
 
 
