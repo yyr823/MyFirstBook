@@ -1,6 +1,6 @@
 # 快速初始化list和map
 
-* #### [原文详解链接](https://blog.csdn.net/weixin_38750084/article/details/86640647)
+* #### [参考详解链接](https://blog.csdn.net/weixin_38750084/article/details/86640647)
 
 > List
 
