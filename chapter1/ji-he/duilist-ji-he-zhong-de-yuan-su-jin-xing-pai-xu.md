@@ -1,10 +1,11 @@
+### 对List集合中的元素进行排序
+
 * #### [原文链接](https://blog.csdn.net/veryisjava/article/details/51675036)
 * #### 场景
 
 有时候需要对集合中的元素按照一定的规则进行排序，这就需要用到,Java中提供的对集合进行操作的工具类Collections，其中的sort方法
 
 * #### **实践:**
-
 * [x] 简单的例子:
 
 ```java
@@ -78,62 +79,62 @@ public static void main(String[] args) {
             //输出结果：55,23  67,23  78,26  34,56
         }
 }
-
 ```
 
-我们会发现sort\(List&lt;T&gt;\)方法中List中的T**`必须实现Comparable<T>接口`**，然后实现_**`compareTo()`**_方法，该方法的返回值0代表相等，1表示大于，-1表示小于;为什么在简单例子中没有看到实现Comparable接口呢？是因为Integer类其实自己已经实现了Comparable接口,Java已经给我们做好了。
+我们会发现sort\(List&lt;T&gt;\)方法中List中的T`必须实现Comparable<T>接口`，然后实现`compareTo()`方法，该方法的返回值0代表相等，1表示大于，-1表示小于;为什么在简单例子中没有看到实现Comparable接口呢？是因为Integer类其实自己已经实现了Comparable接口,Java已经给我们做好了。
 
-2.Collections提供的第二种排序方法**sort\(List&lt;T&gt; list, Comparator&lt;? super T&gt; c\)**
+2.Collections提供的第二种排序方法**sort\(List&lt;T&gt; list, Comparator&lt;? super T&gt; c\)  
+**
 
 ```java
 package core.java.collection.collections;
- 
+
 public class Students {
-	
-	private int age;
-	private int score;
-	
-	public Students(int age, int score){
-		super();
-		this.age = age;
-		this.score = score;
-	}
-	
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	public int getScore() {
-		return score;
-	}
-	public void setScore(int score) {
-		this.score = score;
-	}
+
+    private int age;
+    private int score;
+
+    public Students(int age, int score){
+        super();
+        this.age = age;
+        this.score = score;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public int getScore() {
+        return score;
+    }
+    public void setScore(int score) {
+        this.score = score;
+    }
 }
 public static void main(String[] args) {
-		List<Students> students = new ArrayList<Students>();
-		students.add(new Students(23, 100));
-		students.add(new Students(27, 98));
-		students.add(new Students(29, 99));
-		students.add(new Students(29, 98));
-		students.add(new Students(22, 89));
-		Collections.sort(students, new Comparator<Students>() {
- 
-			@Override
-			public int compare(Students o1, Students o2) {
-				int i = o1.getScore() - o2.getScore();
-				if(i == 0){
-					return o1.getAge() - o2.getAge();
-				}
-				return i;
-			}
-		});
-		for(Students stu : students){
-			System.out.print("score:" + stu.getScore() + ":age" + stu.getAge()+"\t\t");
-	//输出结果： score:89:age22  score:98:age27  score:98:age29  score:99:age29  score:100:age23
-		}
+        List<Students> students = new ArrayList<Students>();
+        students.add(new Students(23, 100));
+        students.add(new Students(27, 98));
+        students.add(new Students(29, 99));
+        students.add(new Students(29, 98));
+        students.add(new Students(22, 89));
+        Collections.sort(students, new Comparator<Students>() {
+
+            @Override
+            public int compare(Students o1, Students o2) {
+                int i = o1.getScore() - o2.getScore();
+                if(i == 0){
+                    return o1.getAge() - o2.getAge();
+                }
+                return i;
+            }
+        });
+        for(Students stu : students){
+            System.out.print("score:" + stu.getScore() + ":age" + stu.getAge()+"\t\t");
+    //输出结果： score:89:age22  score:98:age27  score:98:age29  score:99:age29  score:100:age23
+        }
 }
 ```
 
