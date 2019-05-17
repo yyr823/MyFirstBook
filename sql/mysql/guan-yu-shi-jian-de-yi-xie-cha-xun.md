@@ -1,10 +1,10 @@
-> 查询最近的一条信息
+> * [x] **查询最近的一条信息**
 
 ```sql
 SELECT * FROM table_name ORDER BY create_time DESC LIMIT 1; //limit 1 提高查询效率，避免全表扫描
 ```
 
-> 查询今天
+> * [x] **查询今天**
 
 ```sql
 #方法一：
@@ -26,6 +26,7 @@ SELECT * FROM table_name WHERE TO_DAYS(create_time) =TO_DAYS(NOW());
 * NOW\(\)函数返回当前的日期和时间
 
 * TO\_DAYS\(date\)  返回当前日期的毫秒数
+
 * DATE\(date\) 提取日期或日期/时间表达式的日期部分
 
 > 查询昨天
