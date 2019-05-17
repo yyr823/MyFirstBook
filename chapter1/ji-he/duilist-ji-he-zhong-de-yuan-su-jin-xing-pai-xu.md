@@ -83,7 +83,7 @@ public static void main(String[] args) {
 
 我们会发现sort\(List&lt;T&gt;\)方法中List中的T`必须实现Comparable<T>接口`，然后实现`compareTo()`方法，该方法的返回值0代表相等，1表示大于，-1表示小于;为什么在简单例子中没有看到实现Comparable接口呢？是因为Integer类其实自己已经实现了Comparable接口,Java已经给我们做好了。
 
-2.Collections提供的第二种排序方法**sort\(List&lt;T&gt; list, Comparator&lt;? super T&gt; c\)  
+2.Collections提供的第二种排序方法**sort\(List&lt;T&gt; list, Comparator&lt;? super T&gt; c\)    
 **
 
 ```java
