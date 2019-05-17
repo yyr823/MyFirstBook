@@ -71,7 +71,6 @@ SELECT * FROM table_name WHERE DATEDIFF(NOW(),create_time)=0  //0代表查询的
 
 ```sql
 select * from table_name  where QUARTER(create_time)=QUARTER(NOW());
-
 #查询上季度数据
 select * from table_name  where QUARTER(create_time)=QUARTER(NOW())-1;
 或者:
@@ -104,11 +103,11 @@ SELECT * FROM table_name   WHERE YEARWEEK(date_format(create_time,'%Y-%m-%d')) =
 select * from table_name  where create_time between date_sub(NOW(),interval 6 MONTH) and NOW();
 ```
 
-* [x] 日期：CURDATE\(\)= DATE\(NOW\(\)\)
+* [x] 日期：CURDATE\(\)=CURRENT\_DATE\(\)= DATE\(NOW\(\)\)
 
-* [x] 日期+时间：NOW\(\)
+* [x] 日期+时间：NOW\(\)=SYSDATE\(\)=CURRENT\_TIMESTAMP\(\)=LOCALTIME\(\)=LOCALTIMESTAMP\(\)
 
-* [x] 时间：CURTIME\(\)=TIME\(NOW\(\)\)
+* [x] 时间：CURTIME\(\)=CURRENT\_TIME\(\)=TIME\(NOW\(\)\)
 
 
 
