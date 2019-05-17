@@ -59,7 +59,7 @@ SELECT * FROM table_name WHERE DATE_ADD(create_time,INTERVAL 1 DAY) <= DATE(NOW(
 
 * DATE\_ADD\(date,INTERVAL expr unit\)  给日期添加指定的时间间隔
 
-> 返回两个日期之间的天数
+> * [x] **返回两个日期之间的天数**
 
 ```sql
 SELECT * FROM table_name WHERE DATEDIFF(NOW(),create_time)=0  //0代表查询的是当天,1 查询的就是昨天..
@@ -67,7 +67,7 @@ SELECT * FROM table_name WHERE DATEDIFF(NOW(),create_time)=0  //0代表查询的
 
 * DATEDIFF\(expr1,expr2\) 返回两个日期之间的天数
 
-> **查询本季度数据**
+> * [x] **查询本季度数据**
 
 ```sql
 select * from table_name  where QUARTER(create_time)=QUARTER(NOW());
@@ -80,7 +80,7 @@ select * from table_name   where QUARTER(create_time)=QUARTER(DATE_SUB(NOW(),int
 
 * QUARTER\(date\)    1=1季度\(1-2-3月\)...
 
-> **查询本年数据**
+> * [x] **查询本年数据**
 
 ```sql
 select * from table_name  where YEAR(create_time)=YEAR(NOW());
@@ -92,13 +92,13 @@ select * from table_name   where YEAR(create_time)=YEAR(date_sub(NOW(),interval 
 
 * YEAR\(date\) 获取日期的年份  MONTH\(date\) 获取日期的月份 Day\(date\) 获取日期的天数  TIME\(NOW\(\)\)获取时间
 
-> **查询当前这周的数据**
+> * [x] **查询当前这周的数据**
 
 ```sql
 SELECT * FROM table_name   WHERE YEARWEEK(date_format(create_time,'%Y-%m-%d')) = YEARWEEK(NOW());
 ```
 
-> **查询距离当前现在6个月的数据**
+> * [x] **查询距离当前现在6个月的数据**
 
 ```sql
 select * from table_name  where create_time between date_sub(NOW(),interval 6 MONTH) and NOW();
