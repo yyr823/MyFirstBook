@@ -29,7 +29,7 @@ SELECT * FROM table_name WHERE TO_DAYS(create_time) =TO_DAYS(NOW());
 
 * DATE\(date\) 提取日期或日期/时间表达式的日期部分
 
-> 查询昨天
+> * [x] **查询昨天**
 
 ```sql
 CURDATE()-1  //参考查询今天的方法 在今天的天数是-1
@@ -37,7 +37,7 @@ CURDATE()-1  //参考查询今天的方法 在今天的天数是-1
 
 * CURDATE\(\)  返回当前的日期
 
-> 查询一个星期内/一个月内的数据的数据
+> * [x] 查询一个星期内/一个月内的数据的数据
 
 ```sql
 SELECT * FROM table_name WHERE DATE_SUB(CURDATE(),INTERVAL 7 DAY/INTERVAL 1 MONTH) <=DATE(create_time) ORDER BY create_time DESC;
