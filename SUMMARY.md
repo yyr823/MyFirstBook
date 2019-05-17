@@ -21,6 +21,7 @@
     * [application.properties常用设置](chapter1/springboot/applicationpropertieschang-yong-she-zhi.md)
     * [Exception](chapter1/springboot/exception.md)
       * [No primary or default constructor found for interface java.util.List](chapter1/springboot/exception/no-primary-or-default-constructor-found-for-interface-javautillist.md)
+  * 类型之间的相互转换
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
