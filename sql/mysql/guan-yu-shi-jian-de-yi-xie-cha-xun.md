@@ -37,7 +37,7 @@ CURDATE()-1  //参考查询今天的方法 在今天的天数是-1
 
 * CURDATE\(\)  返回当前的日期
 
-> * [x] 查询一个星期内/一个月内的数据的数据
+> * [x] **查询一个星期内/一个月内的数据的数据**
 
 ```sql
 SELECT * FROM table_name WHERE DATE_SUB(CURDATE(),INTERVAL 7 DAY/INTERVAL 1 MONTH) <=DATE(create_time) ORDER BY create_time DESC;
@@ -45,13 +45,13 @@ SELECT * FROM table_name WHERE DATE_SUB(CURDATE(),INTERVAL 7 DAY/INTERVAL 1 MONT
 
 * DATE\_SUB\(date,INTERVAL expr unit\) 从日期里减去指定的时间间隔
 
-> 返回date的星期索引\(1 = Sunday, 2 = Monday, ... 7 = Saturday\)
+> * [x] **返回date的星期索引\(1 = Sunday, 2 = Monday, ... 7 = Saturday\)**
 
 ```sql
 SELECT DAYOFWEEK(create_time) FROM table_name ORDER BY create_time DESC
 ```
 
-> 给日期添加指定的时间间隔
+> * [x] **给日期添加指定的时间间隔**
 
 ```sql
 SELECT * FROM table_name WHERE DATE_ADD(create_time,INTERVAL 1 DAY) <= DATE(NOW());
