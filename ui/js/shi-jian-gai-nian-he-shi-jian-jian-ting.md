@@ -1,5 +1,17 @@
 ![](/assets/s1.png)![](/assets/s2.png)
 
+![](/assets/s9.png)结果:  p  div body p div ....
+
+
+
+
+
+
+
+
+
+
+
 ![](/assets/s4.png)![](/assets/s5.png)**一般不会使用:**
 
 ```js
