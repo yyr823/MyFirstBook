@@ -25,6 +25,7 @@
   * [Tools](chapter1/tools.md)
     * [Java对日期Date相应处理](chapter1/tools/javadui-ri-qi-date-xiang-ying-chu-li.md)
     * [Java类型的转换](chapter1/tools/lei-xing-de-zhuan-huan.md)
+    * [Java生成一定规则递增编号](chapter1/tools/javasheng-cheng-yi-ding-gui-ze-di-zeng-bian-hao.md)
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
