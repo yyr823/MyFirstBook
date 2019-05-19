@@ -11,7 +11,7 @@ fatal: Authentication failed for 'https://gitee.com/yyr/demo.git/'
 
 * #### 原因:
 
-#####    由于之前重置了Git账户的密码，忘记修改计算机的凭据导致这个问题的出现。
+* [x] 由于之前重置了Git账户的密码，忘记修改计算机的凭据导致这个问题的出现。
 
 * #### 解决方案:
 * [x] **打开电脑的控制面板–&gt;用户账户–&gt;管理Windows凭据**
