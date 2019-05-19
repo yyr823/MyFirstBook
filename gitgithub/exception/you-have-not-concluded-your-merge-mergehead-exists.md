@@ -9,7 +9,7 @@
 
 ```git
 git fetch origin master           //从远程的origin的master主分支上获取最新版本到origin/master分支上
-git log -p master..origin/master  //比较本地的master分支和origin/master分支的区别
+git log -p master..origin/master  //比较本地的master分支和origin/  master分支的区别
 git merge origin/master           //合并
 ```
 
@@ -22,7 +22,6 @@ git merge origin/master           //合并
 ##### 实际工作中,可能`git fetch`更好一些, 因为在`merge`前,可以根据实际情况决定是否`merge`
 
 * #### 解决方法：
-
 * [x] **方法一:保留本地的更改,中止合并-&gt;重新合并-&gt;重新拉取**
 
 ```git
