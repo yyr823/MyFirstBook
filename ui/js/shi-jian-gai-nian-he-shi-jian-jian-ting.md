@@ -1,6 +1,6 @@
 ![](/assets/s1.png)![](/assets/s2.png)
 
-![](/assets/s4.png)![](/assets/s5.png)
+![](/assets/s4.png)![](/assets/s5.png)**一般不会使用:**
 
 ```js
 //Ie特有:
