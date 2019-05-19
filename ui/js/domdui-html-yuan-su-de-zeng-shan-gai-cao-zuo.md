@@ -53,11 +53,9 @@
 
 ![](/assets/K6.png)
 
-* 删除列表框或下拉菜单的选项的方法
+* **删除列表框或下拉菜单的选项的方法**
 
-  ```
-   列表框或下拉菜单对象.remove\(index\)方法/对象.options\[index\]=null 删除指定项
-  ```
+列表框或下拉菜单对象.remove\\(index\\)方法/对象.options\\[index\\]=null 删除指定项
 
 ```js
 <!DOCTYPE html>
