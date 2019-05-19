@@ -1,3 +1,5 @@
+![](/assets/bo8.png)![](/assets/bo9.jpg)![](/assets/bo10.png)![](/assets/bo11.png)![](/assets/bo11.jpg)
+
 ![](/assets/kk1.jpg)**代码示例:**
 
 ```html
@@ -116,71 +118,61 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<script type="text/javascript">
-			function createTable() {
-				var b = document.getElementById("test");
-				var t = document.createElement("table");
-				t.border = "1";
-				t.id = "mytable";
-				var caption = t.createCaption();
-				caption.innerHTML = "我的表格";
-				for(var i = 0; i < 5; i++) {
-					var tr = t.insertRow(i);
-					for(var j = 0; j < 4; j++) {
-						var td = tr.insertCell(j);
-						td.innerHTML = "单元格" + i + j;
-					}
-				}
-				b.appendChild(t);
-			}
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/javascript">
+            function createTable() {
+                var b = document.getElementById("test");
+                var t = document.createElement("table");
+                t.border = "1";
+                t.id = "mytable";
+                var caption = t.createCaption();
+                caption.innerHTML = "我的表格";
+                for(var i = 0; i < 5; i++) {
+                    var tr = t.insertRow(i);
+                    for(var j = 0; j < 4; j++) {
+                        var td = tr.insertCell(j);
+                        td.innerHTML = "单元格" + i + j;
+                    }
+                }
+                b.appendChild(t);
+            }
 
-			function delLastRow() {
-				var t = document.getElementById("mytable");
-				var rows = t.rows;
-				if(rows.length > 0) {
-					t.deleteRow(rows.length - 1);
-				}
+            function delLastRow() {
+                var t = document.getElementById("mytable");
+                var rows = t.rows;
+                if(rows.length > 0) {
+                    t.deleteRow(rows.length - 1);
+                }
 
-			}
+            }
 
-			function delLastCell() {
-				var t = document.getElementById("mytable");
-				var rows = t.rows;
-				if(rows.length > 0) {
-					var lastRow = t.rows[t.rows.length - 1];
-					var len = lastRow.cells.length;
-					if(len > 0) {
-						lastRow.deleteCell(len - 1);
-					}
-				}
+            function delLastCell() {
+                var t = document.getElementById("mytable");
+                var rows = t.rows;
+                if(rows.length > 0) {
+                    var lastRow = t.rows[t.rows.length - 1];
+                    var len = lastRow.cells.length;
+                    if(len > 0) {
+                        lastRow.deleteCell(len - 1);
+                    }
+                }
 
-			}
-		</script>
-	</head>
+            }
+        </script>
+    </head>
 
-	<body id="test">
+    <body id="test">
 
-		<input type="button" value="创建一个5行4列的表格" onclick="createTable()" />
-		<input type="button" value="删除最后一行" onclick="delLastRow()" />
-		<input type="button" value="删除最后一个单元格" onclick="delLastCell()" />
+        <input type="button" value="创建一个5行4列的表格" onclick="createTable()" />
+        <input type="button" value="删除最后一行" onclick="delLastRow()" />
+        <input type="button" value="删除最后一个单元格" onclick="delLastCell()" />
 
-	</body>
+    </body>
 
 </html>
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 
