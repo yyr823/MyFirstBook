@@ -14,8 +14,6 @@
 
 ![](/assets/图片13.png)![](/assets/图片13-1.png)
 
-
-
 **5、IDEA构建项目的时候默认生成的iml文件配置改成.classpath类型的文件**
 
 ![](/assets/图片14.png)
@@ -52,6 +50,8 @@
 
 ![](/assets/图片21-1.png)![](/assets/图片21-2.png)
 
+#### [IDEA类和方法注释模板设置（非常详细）](https://blog.csdn.net/xiaoliulang0324/article/details/79030752)
+
 **13、快捷键设置**
 
 ![](/assets/图片22-1.png)![](/assets/图片22-2.png)![](/assets/图片22-3.png)
@@ -75,6 +75,4 @@
 Ctrl+N ：快速查找文件
 
 ![](/assets/图片28.png)Alt + F1 ：快速定位文件在那个位置![](/assets/图片28-1.png)
-
-
 
