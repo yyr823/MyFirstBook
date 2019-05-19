@@ -26,7 +26,7 @@
 | Tab / Shift + Tab | 缩进/反缩进所选行 |
 | Ctrl+X or Shift+Delete | 剪切行/代码块到剪贴板\(默认全选一行\) |
 | Ctrl+C or Ctrl+Insert | 复制行/代码块到剪贴板\(默认全选一行\) |
-| Ctrl+VorShift+Insert | 粘贴剪贴板中的内容 |
+| Ctrl+V or Shift+Insert | 粘贴剪贴板中的内容 |
 | Ctrl+Shift + V | 粘贴剪贴板中缓存的内容 |
 | Ctrl+D | 复制当前行/代码块的一个副本并插入到内容中 |
 | Ctrl+Y | 删除光标所在行 |
@@ -146,6 +146,8 @@
 | Ctrl + Alt + Shift + S | 打开项目结构对话框，在这里可以删除模块 |
 | Ctrl + Tab | 在已打开的文件和工具窗口之间切换 |
 | Ctrl + Shift + A | 查找所有快捷操作（基本所有的动作在这里都可以找到） |
+| Ctrl+Z | 撤销 |
+| Ctrl+Shift+Z | 恢复Ctrl+Z掉的内容 |
 
 
 
