@@ -1,17 +1,11 @@
 ![](/assets/s1.png)![](/assets/s2.png)
 
+* **冒泡型事件:**
+
 ![](/assets/s9.png)结果:  p  div body p div ....
 
-
-
-
-
-
-
-
-
-
-
+* 捕获型事件:
+* 
 ![](/assets/s4.png)![](/assets/s5.png)**一般不会使用:**
 
 ```js
