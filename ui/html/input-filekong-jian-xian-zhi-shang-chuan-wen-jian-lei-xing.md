@@ -1,14 +1,13 @@
 ### input file控件限制上传文件类型
 
 * #### [**原文链接**](https://www.cnblogs.com/haocool/p/3431181.html)
-
 * [x] 网页上添加一个input file HTML控件：
 
 ```html
 <input id="File1" type="file" />
 ```
 
-| 默认是这样的，所有文件类型都会显示出来，如果想限制它只显示我们设定的文件类型呢，比如“word“,”excel“,”pdf“文件　 |
+| 默认是这样的，所有文件类型都会显示出来，如果想限制它只显示我们设定的文件类型呢，比如“word“,”excel“,”pdf“文件 |
 | :---: |
 
 
@@ -20,7 +19,7 @@
 <input id="File1" type="file"  accept=".xls,.doc,.txt,.pdf"  />
 ```
 
-　　这样选择的时候默认会显示为这样：
+这样选择的时候默认会显示为这样：
 
 ![](https://images0.cnblogs.com/blog/45145/201311/19114731-3c24c5f8244c4274851bb937d13c2ff4.jpg)
 
