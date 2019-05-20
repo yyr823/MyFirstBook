@@ -29,6 +29,7 @@
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
+    * [数据类型](sql/shu-ju-lei-xing.md)
     * [Case when then end](sql/mysql/case-when-then-end.md)
     * [关于时间的一些查询](sql/mysql/guan-yu-shi-jian-de-yi-xie-cha-xun.md)
     * [实用sql](sql/mysql/shi-yong-sql.md)
