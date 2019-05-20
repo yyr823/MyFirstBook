@@ -2,11 +2,11 @@
 
 * **冒泡型事件:**
 
-![](/assets/s9.png)结果:  p  div body p div ....
+![](/assets/s9.png)**结果:  p  div body p div ....**
 
 * 捕获型事件:
 
-![](/assets/s10.png)结果: body   div   p  body  div    p ....
+![](/assets/s10.png)**结果: body   div   p  body  div    p ....**
 
 ![](/assets/s4.png)![](/assets/s5.png)**一般不会使用:**
 
