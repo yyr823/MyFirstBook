@@ -32,6 +32,7 @@
     * [Case when then end](sql/mysql/case-when-then-end.md)
     * [关于时间的一些查询](sql/mysql/guan-yu-shi-jian-de-yi-xie-cha-xun.md)
     * [实用sql](sql/mysql/shi-yong-sql.md)
+    * 事务+隔离级别
   * [连接数据库常用配置](sql/lian-jie-shu-ju-ku-chang-yong-pei-zhi.md)
   * [常用语法](sql/chang-yong-yu-fa.md)
 * [UI](ui.md)
