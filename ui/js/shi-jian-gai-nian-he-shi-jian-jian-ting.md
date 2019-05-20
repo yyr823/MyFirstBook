@@ -6,7 +6,7 @@
 
 * 捕获型事件:
 
-
+![](/assets/s10.png)结果: body   div   p  body  div    p ....
 
 ![](/assets/s4.png)![](/assets/s5.png)**一般不会使用:**
 
