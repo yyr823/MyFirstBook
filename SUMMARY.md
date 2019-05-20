@@ -59,6 +59,7 @@
     * [input file控件限制上传文件类型](ui/html/input-filekong-jian-xian-zhi-shang-chuan-wen-jian-lei-xing.md)
   * [Ztree](ui/ztree.md)
     * [获取子节点所有父节点的name的拼接](ui/ztree/huo-qu-zi-jie-dian-suo-you-fu-jie-dian-de-name-de-pin-jie.md)
+  * [网站中英文切换](ui/wang-zhan-zhong-ying-wen-qie-huan.md)
 * [Git/Github](gitgithub.md)
   * [git相关内容](gitgithub/gitxiang-guan-nei-rong.md)
   * [git常用命令](gitgithub/gitchang-yong-ming-ling.md)
