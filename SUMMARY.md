@@ -53,6 +53,7 @@
     * [常用内置对象](ui/js/chang-yong-nei-zhi-dui-xiang.md)
     * [BOM模型中常用对象的介绍](ui/js/bommo-xing-zhong-chang-yong-dui-xiang-de-jie-shao.md)
     * [事件概念和事件监听](ui/js/shi-jian-gai-nian-he-shi-jian-jian-ting.md)
+    * [js正则验证特殊字符](ui/js/jszheng-ze-yan-zheng-te-shu-zi-fu.md)
   * [html](ui/html.md)
     * [input file控件限制上传文件类型](ui/html/input-filekong-jian-xian-zhi-shang-chuan-wen-jian-lei-xing.md)
   * [Ztree](ui/ztree.md)
