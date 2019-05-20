@@ -1,12 +1,12 @@
 * ### 插入或替换
 
-如果我们希望插入一条新记录（INSERT），但如果记录已经存在，就先删除原记录，再插入新记录。此时，可以使用`REPLACE`语句，这样就不必先查询，再决定是否先删除再插入：
+如果我们希望插入一条新记录（INSERT），但如果记录已经存在，就先删除原记录，再插入新记录。此时，可以使用**`REPLACE`**语句，这样就不必先查询，再决定是否先删除再插入：
 
 ```sql
 REPLACE INTO students (id, class_id, name, gender, score) VALUES (1, 1, '小明', 'F', 99);
 ```
 
-若`id=1`的记录不存在，`REPLACE`语句将插入新记录，否则，当前`id=1`的记录将被删除，然后再插入新记录。
+**若`id=1`的记录不存在，`REPLACE`语句将插入新记录，否则，当前`id=1`的记录将被删除，然后再插入新记录。**
 
 * ### 插入或更新
 
@@ -18,7 +18,7 @@ INSERT INTO students (id, class_id, name, gender, score) VALUES (1, 1, '小明',
 
 若`id=1`的记录不存在，`INSERT`语句将插入新记录，否则，当前`id=1`的记录将被更新，更新的字段由`UPDATE`指定。
 
-### 插入或忽略
+* ### 插入或忽略
 
 如果我们希望插入一条新记录（INSERT），但如果记录已经存在，就啥事也不干直接忽略，此时，可以使用`INSERT IGNORE INTO ...`语句：
 
@@ -28,7 +28,7 @@ INSERT IGNORE INTO students (id, class_id, name, gender, score) VALUES (1, 1, '�
 
 若`id=1`的记录不存在，`INSERT`语句将插入新记录，否则，不执行任何操作。
 
-### 快照
+* ### 快照
 
 如果想要对一个表进行快照，即复制一份当前表的数据到一个新表，可以结合`CREATE TABLE`和`SELECT`：
 
@@ -37,9 +37,9 @@ INSERT IGNORE INTO students (id, class_id, name, gender, score) VALUES (1, 1, '�
 CREATE TABLE students_of_class1 SELECT * FROM students WHERE class_id=1;
 ```
 
-新创建的表结构和`SELECT`使用的表结构完全一致。
+新创建的表结构和`SELECT`使用的表结构**完全一致**。
 
-### 写入查询结果集
+* ### 写入查询结果集
 
 如果查询结果集需要写入到表中，可以结合`INSERT`和`SELECT`，将`SELECT`语句的结果集直接插入到指定表中。
 
