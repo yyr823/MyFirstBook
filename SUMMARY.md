@@ -52,7 +52,7 @@
     * [BOM模型中常用对象的介绍](ui/js/bommo-xing-zhong-chang-yong-dui-xiang-de-jie-shao.md)
     * [事件概念和事件监听](ui/js/shi-jian-gai-nian-he-shi-jian-jian-ting.md)
   * [html](ui/html.md)
-    * input file控件限制上传文件类型
+    * [input file控件限制上传文件类型](ui/html/input-filekong-jian-xian-zhi-shang-chuan-wen-jian-lei-xing.md)
 * [Git/Github](gitgithub.md)
   * [git相关内容](gitgithub/gitxiang-guan-nei-rong.md)
   * [git常用命令](gitgithub/gitchang-yong-ming-ling.md)
