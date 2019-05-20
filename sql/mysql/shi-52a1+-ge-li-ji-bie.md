@@ -12,7 +12,7 @@
 SQL标准定义了4种隔离级别，分别对应可能出现的数据不一致的情况：
 
 | Isolation Level | 脏读（Dirty Read） | 不可重复读（Non Repeatable Read） | 幻读（Phantom Read） |
-| :--- | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: |
 | Read Uncommitted | Yes | Yes | Yes |
 | Read Committed | - | Yes | Yes |
 | Repeatable Read | - | - | Yes |
@@ -84,7 +84,7 @@ mysql> select * from students;
 
 * 在Repeatable Read隔离级别下，一个事务可能会遇到幻读（Phantom Read）的问题。
 
-**`幻读`是指，在一个事务中，第一次查询某条记录，发现没有，但是，当试图更新这条不存在的记录时，竟然能成功，并且，再次读取同一条记录，它就神奇地出现了。**
+`幻读`**是指，在一个事务中，第一次查询某条记录，发现没有，但是，当试图更新这条不存在的记录时，竟然能成功，并且，再次读取同一条记录，它就神奇地出现了。**
 
 我们仍然先准备好`students`表的数据：
 
@@ -118,15 +118,7 @@ mysql> select * from students;
 
 * Serializable是最严格的隔离级别。**在Serializable隔离级别下，所有事务按照次序依次执行**，因此，脏读、不可重复读、幻读都不会出现。虽然Serializable隔离级别下的事务具有最高的安全性，但是，由于事务是串行执行，所以**效率会大大下降**，应用程序的**性能会急剧降低**。如果没有特别重要的情景,**一般都不会使用Serializable隔离级别**。
 
-* [ ] **默认隔离级别**
+* [x] **默认隔离级别**
 
-如果没有指定隔离级别，数据库就会使用默认的隔离级别**。在MySQL中，如果使用`InnoDB`，默认的隔离级别是`Repeatable Read`**。
-
-
-
-
-
-
-
-
+如果没有指定隔离级别，数据库就会使用默认的隔离级别**。在MySQL中，如果使用**`InnoDB`**，默认的隔离级别是**`Repeatable Read`。
 
