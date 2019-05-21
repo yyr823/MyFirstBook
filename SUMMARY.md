@@ -42,6 +42,7 @@
     * [如何改变html标签的样式\(两种实现方法\)](ui/jquery/jqueryru-he-gai-bian-html-biao-qian-de-yang-5f0f28-liang-zhong-shi-xian-fang-6cd529.md)
     * [特殊日期格式转换2018-12-03T17:17:36.000+08:00 转化为2018-12-03 00:00:00（正则表达式的方法）](ui/jquery/te-shu-ri-qi-ge-shi-zhuan-6362-2018-12-03t17-17-36-000-+-08-00-zhuan-hua-wei-2018-12-03-00-00-00-ff08-zheng-ze-biao-da-shi-de-fang-fa-ff09.md)
     * [jquery禁用、启用button以及button的样式操作](ui/jquery/jqueryjin-yong-3001-qi-yong-button-yi-ji-button-de-yang-shi-cao-zuo.md)
+    * [根据指定的时间来跟当前时间比较计算倒计时](ui/jquery/gen-ju-zhi-ding-de-shi-jian-lai-gen-dang-qian-shi-jian-bi-jiao-ji-suan-dao-ji-shi.md)
   * [LayUI](ui/layui.md)
     * [相关链接](ui/layui/xiang-guan-lian-jie.md)
     * [layui表格内放置图片,并点击放大](ui/layui/layuibiao-ge-nei-fang-zhi-tu-72472c-bing-dian-ji-fang-da.md)
