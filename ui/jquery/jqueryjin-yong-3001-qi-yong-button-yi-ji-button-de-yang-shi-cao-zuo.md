@@ -4,19 +4,19 @@
 
 > #### 一：**禁止使用button**
 
-1.直接写在&lt;button&gt;标签里面
+**1.直接写在&lt;button&gt;标签里面**
 
 ```html
 <button id="btn" disabled="disabled">设置按钮不可以点击</button>
 ```
 
-2.js禁用button
+**2.js禁用button**
 
 ```js
-document.getElementById("btn").disabled=true; 
+document.getElementById("btn").disabled=true;
 ```
 
-3.使用jquery禁用button
+**3.使用jquery禁用button**
 
 ```js
 $("#btn").attr('disabled',true);
@@ -26,13 +26,13 @@ $("#btn").prop('disabled','disabled');
 
 > #### 二：设置禁用之后启用button
 
-1.使用js启用button
+**1.使用js启用button**
 
 ```js
 document.getElementById("btn").disabled = true;
 ```
 
-2.jquery启用button
+**2.jquery启用button**
 
 ```js
 $("#btn").attr('disabled',false);
@@ -82,7 +82,7 @@ $("#btn").click(function(){
 
 > #### 六：jquery改变button的样式
 
-1.直接css\(\)方法进行修改样式
+**1.直接css\(\)方法进行修改样式**
 
 ```js
 $("#btn").css("color","red");//改一种
@@ -102,7 +102,7 @@ $("#btn").css({
 });//改多种，注意里面加大括号
 ```
 
-2.首先定义一个class的样式，然后动态的添加样式
+**2.首先定义一个class的样式，然后动态的添加样式**
 
 ```css
 .btnStyle{
@@ -115,7 +115,7 @@ $("#btn").css({
 }
 ```
 
-点击改成上面这个样式、点击移除上面这个样式。
+**点击改成上面这个样式、点击移除上面这个样式。**
 
 ```js
 $("#btn").click(function(){  
@@ -123,7 +123,7 @@ $("#btn").click(function(){
  }) 
 $("#btn").click(function(){  
        $(this).removeClass("btnStyle");  
- }) 
+ })
 ```
 
 
