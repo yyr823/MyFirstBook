@@ -12,7 +12,7 @@ var  s1=new Student();//没有传入参数
 var  s2=new Student("haogeshuai",30) ;
 document. write(s1.name+"--"+s1.age+"<br/>");
 document. write(s2.name+"--"+s2.age) ;
-</script> 
+</script>
 ```
 
 > #### 使用Object直接创建对象
@@ -28,7 +28,7 @@ document. write("今年"+this.age+"岁<br/>") ;
 }
 myObj.info();
 
-</script> 
+</script>
 ```
 
 > #### **JavaScript使用JSON创建对象的语法**
@@ -37,7 +37,9 @@ myObj.info();
 
 * [x] **JSON的格式**
 
- JSON对象是以一对**”大括号”**括起来,大括号内以多个”名值对”组成,多个名值对之问用**“逗号”**隔开,名所对应的值可以是各种数据类型的值,也可以是JSON对象。 JSON数组用**“\[\]”**括起来.
+  JSON对象是以一对**”大括号”**括起来,  
+  大括号内以多个”名值对”组成,多个名值对之问用**“逗号”**隔开,名所对应的值可以是各种数据类型的值,  
+  也可以是JSON对象。 JSON数组用**“\[\]”**括起来.
 
 * ##### **语法**
 
@@ -58,7 +60,8 @@ document.write("姓名:"+this.name+",性别:"+this.gender);
  p.info();
 ```
 
-* **对象是 JavaScript的特性之一,它是一种非常重要的数据类  型,是自我包含的数据集合。这里介绍两个实用的具体对象  `Date和Math`**
+* 对象是 JavaScript的特性之一,它是一种非常重要的数据类型,是自我包含的数据集合。这里介绍两个实用的具体对象
+  `Date和Math`
 
 > #### 创建Date对象方法
 
