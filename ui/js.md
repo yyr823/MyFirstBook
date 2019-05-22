@@ -4,6 +4,7 @@
 4. #### [BOM模型中常用对象的介绍](/ui/js/bommo-xing-zhong-chang-yong-dui-xiang-de-jie-shao.md)
 5. #### [事件概念和事件监听](/ui/js/shi-jian-gai-nian-he-shi-jian-jian-ting.md)
 6. #### [js正则验证特殊字符](/ui/js/jszheng-ze-yan-zheng-te-shu-zi-fu.md)
+7. #### [onclick事件传变量时注意的问题](/ui/js/onclickshi-jian-chuan-bian-liang-shi-zhu-yi-de-wen-ti.md)
 
 
 
