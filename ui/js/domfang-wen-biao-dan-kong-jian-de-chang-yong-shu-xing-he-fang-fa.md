@@ -1,20 +1,20 @@
 > #### DOM访问列表框、下拉菜单的常用属性
 
-| form  | 返回列表框/下拉框所在的表单对象 |
+| form | 返回列表框/下拉框所在的表单对象 |
 | :--- | :--- |
-| length  | 返回列表框/下拉框的选项个数 |
-| options  | 返回列表框/下拉菜单里所有选项组成的数组 |
-| selectedIndex  | 返回下拉列表中选中选项的索引 |
-| type  | 返回下拉列表的类型, 多选的话返回select-multiple,单选select-one  |
+| length | 返回列表框/下拉框的选项个数 |
+| options | 返回列表框/下拉菜单里所有选项组成的数组 |
+| selectedIndex | 返回下拉列表中选中选项的索引 |
+| type | 返回下拉列表的类型, 多选的话返回select-multiple,单选select-one |
 
 > #### 使用options\[index\]返回具体选项所对应的常用属性
 
 | defaultSelected | 返回该选项默认是否被选中 |
 | :--- | :--- |
 | index | 返回该选项在列框/下拉菜单中的索引 |
-| selected  | 返回该选项是否被选中 |
+| selected | 返回该选项是否被选中 |
 | text | 返回该选项呈现的文本 |
-| value  | 返回该选项的value属性值 |
+| value | 返回该选项的value属性值 |
 
 > #### 在elements返回的数组中访问具体的表单控件语法如下
 
