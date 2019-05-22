@@ -65,13 +65,52 @@ op.onclick=function(oEvent){
 
 ```js
 op.onclick=function(oEvent){
-	if(window.event){
-		oEvent=window.event;
-	}
+    if(window.event){
+        oEvent=window.event;
+    }
 }
 ```
 
+![](/assets/sj3.png)
 
+```js
+<!DOCTYPE html>
+<html>
 
+	<head>
+		<meta charset="UTF-8">
+		<title>事件的目标</title>
+		<script>
+			function handle(oEvent) {
+				if(window.event) {
+					oEvent = window.event;
+				}
+				var oTarget;
+				if(oEvent.srcElement) {
+					oTarget = oEvent.srcElement;//IE
 
+				} else {
+					oTarget = oEvent.target;//标准DOM
+				}
+				alert(oTarget.tagName); //弹出IMG
+			}
+
+			window.onload = function() {
+				var oImg = document.getElementsByTagName("img")[0];
+				oImg.onclick = handle;
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<img src="img/HBuilder.png" border="0" />
+	</body>
+
+</html>
+```
+
+> #### 常见的事件类型
+
+![](/assets/sj1.png)![](/assets/sj2.png)
 
