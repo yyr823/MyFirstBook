@@ -81,7 +81,7 @@
 
 > #### DOM为列表框、下拉菜单添加选项的方式
 
-* [x] **创建选项除了使用前面所示一createElement方法之外, 还可以使用专门的构造器来构造一个选项出来 。 **
+* [x] **创建选项除了使用前面所示一createElement方法之外, 还可以使用专门的构造器来构造一个选项出来 **
 
 * [x] **语法如下:**
 
@@ -103,7 +103,7 @@ new Option(text,value,defaultSelected,selected)
 
 * [x] 直接为&lt;select.../&gt;的指定选项赋值
 
- **`列表框或下拉菜单对象.options[i]=创建好的option对象`**
+  `列表框或下拉菜单对象.options[i]=创建好的option对象`
 
 * **删除列表框或下拉菜单的选项的方法**
 
