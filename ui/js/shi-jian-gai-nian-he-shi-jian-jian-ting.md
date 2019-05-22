@@ -77,40 +77,131 @@ op.onclick=function(oEvent){
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>事件的目标</title>
-		<script>
-			function handle(oEvent) {
-				if(window.event) {
-					oEvent = window.event;
-				}
-				var oTarget;
-				if(oEvent.srcElement) {
-					oTarget = oEvent.srcElement;//IE
+    <head>
+        <meta charset="UTF-8">
+        <title>事件的目标</title>
+        <script>
+            function handle(oEvent) {
+                if(window.event) {
+                    oEvent = window.event;
+                }
+                var oTarget;
+                if(oEvent.srcElement) {
+                    oTarget = oEvent.srcElement;//IE
 
-				} else {
-					oTarget = oEvent.target;//标准DOM
-				}
-				alert(oTarget.tagName); //弹出IMG
-			}
+                } else {
+                    oTarget = oEvent.target;//标准DOM
+                }
+                alert(oTarget.tagName); //弹出IMG
+            }
 
-			window.onload = function() {
-				var oImg = document.getElementsByTagName("img")[0];
-				oImg.onclick = handle;
-			}
-		</script>
+            window.onload = function() {
+                var oImg = document.getElementsByTagName("img")[0];
+                oImg.onclick = handle;
+            }
+        </script>
 
-	</head>
+    </head>
 
-	<body>
-		<img src="img/HBuilder.png" border="0" />
-	</body>
+    <body>
+        <img src="img/HBuilder.png" border="0" />
+    </body>
 
 </html>
 ```
 
 > #### 常见的事件类型
 
-![](/assets/sj1.png)![](/assets/sj2.png)
+![](/assets/sj1.png)
+
+```js
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>鼠标事件</title>
+		<script>
+			function handle(oEvent) {
+				if(window.event) {
+					oEvent = window.event; //处理兼容性，获得事件对象
+				}
+				var oDiv = document.getElementById("display"); 
+				oDiv.innerHTML += oEvent.type + "<br/>";//输出事件名称
+			}
+
+			window.onload = function() {
+				var oImg = document.getElementsByTagName("img")[0];
+				oImg.onmousedown = handle;
+				oImg.onmouseup = handle;
+				oImg.onmouseover = handle;
+				oImg.onmouseout = handle;
+				oImg.onclick = handle;
+				oImg.ondblclick = handle;
+			}
+		</script>
+
+	</head>
+	<body>
+		<img src="img/HBuilder.png" border="0" />
+		<div id="display"></div>
+	</body>
+
+</html>
+```
+
+```js
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>键盘事件</title>
+		<script>
+			function handle(oEvent) {
+				if(window.event) {
+					oEvent = window.event; //处理兼容性，获得事件对象
+				}
+				var oDiv = document.getElementById("display");
+				oDiv.innerHTML += oEvent.type + "<br/>"; //输出事件名称
+			}
+
+			window.onload = function() {
+				var txt = document.getElementsByTagName("textarea")[0];
+				txt.onkeydown = handle;
+				txt.onkeyup = handle;
+				txt.onkeypress = handle;
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<textarea rows="4" cols="50"></textarea>
+		<div id="display"></div>
+	</body>
+
+</html>
+```
+
+![](/assets/sj2.png)
+
+```HTML
+<body onload="alert('hello')" onunload="alert('byebye')">
+		<form action="https://www.baidu.com" onsubmit="return false">
+			<input type="text" value="a" onfocus="alert('获取焦点')" onblur="alert('失去焦点')" />
+			<input type="text" value="b" onchange="alert('内容改变了')" onselect="alert('内容选中了')" />
+			<select name="city" onchange="alert('选项改变了')">
+				<option>上海</option>
+				<option>北京</option>
+			</select>
+			<br/>
+			<input type="submit" value="提交" />
+
+		</form>
+
+</body>
+```
+
+
 
