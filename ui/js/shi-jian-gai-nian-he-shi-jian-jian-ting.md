@@ -1,10 +1,10 @@
 #### 事件的概念
 
-** JavaScript使我们有能力创建动态页面, 网页中的每个元素都可以产生某些可以触发 JavaScript函数的事件。我们可以认为事件是可以被 JavaScript侦测到的一种行为。**
+**JavaScript使我们有能力创建动态页面, 网页中的每个元素都可以产生某些可以触发 JavaScript函数的事件。我们可以认为事件是可以被 JavaScript侦测到的一种行为。**
 
 #### 事件流
 
-事件流主要分冒泡型事件 ,和捕获型事件 。 l E浏览器目前只支持冒泡型事件,火狐、 chrome等两者都支持。 
+事件流主要分冒泡型事件 ,和捕获型事件 。 l E浏览器目前只支持冒泡型事件,火狐、 chrome等两者都支持。
 
 ![](/assets/s2.png)
 
@@ -21,7 +21,6 @@
 HTML元素大都包含了自己的默认行为,例如：超链接、提交按钮等。 我们可以通过在绑定事件中加`return false`来阻止它的默认行为。
 
 * #### 通用性的事件监听方法
-
 * [x] 绑定HTML元素属性
 
 ```js
@@ -34,14 +33,12 @@ HTML元素大都包含了自己的默认行为,例如：超链接、提交按钮
 document.getElementById("btn1").onclick=test;
 ```
 
-* ####  IE中的事件监听方法
-
-* [x] \[object\].attachEvent\(“事件类型”,“处理函数”\);//添加监听 
+* #### IE中的事件监听方法
+* [x] \[object\].attachEvent\(“事件类型”,“处理函数”\);//添加监听
 
 * [x] \[object\].detachEvent\(“事件类型”, 处理函数”\); //取消监听
 
-* ####  标准DOM中的事件监听方法
-
+* #### 标准DOM中的事件监听方法
 * [x] \[objeot\]. addEventListener\( “事件类型”,“处理函数”，“冒泡事件或捕获事件”\);
 
 * [x] \[objeot\]. removeEventListener\( “事件类型”,“处理函数”，“冒泡事件或捕获事件”\);
@@ -152,23 +149,24 @@ op.onclick=function(oEvent){
 
 #### **常见的事件类型**
 
-> ####  常用的鼠标事件
+> #### 常用的鼠标事件
 
 | onclick | 单击鼠标左键触发 |
 | :--- | :--- |
-| ondclick   | 双击鼠标左键触发 |
-| onmousedown  | 单击任意一个鼠标按键时触发 |
+| ondclick | 双击鼠标左键触发 |
+| onmousedown | 单击任意一个鼠标按键时触发 |
 | onmousemove | 鼠标在某个元素上移动时持续触发 |
 | onmouseout | 鼠标指针移出一个元素边界时触发 |
 | onmouseup | 松开鼠标任意一个按键时触发 |
 | onmouseover | 鼠标指针移到一个元素上时触发 |
 
-> ####  常用的键盘事件
+> #### 常用的键盘事件
 
-| onkeydown  | 按下键盘上某个按键时触发,一直按会持续触发 |
+| onkeydown | 按下键盘上某个按键时触发,一直按会持续触发 |
 | :--- | :--- |
 | onkeyup | 释放某个按键时触发 |
-| onkeypress  | 按下某个按键并产生字符时触发, 忽略shift等功能键 |
+| onkeypress | 按下某个按键并产生字符时触发, 忽略shift等功能键 |
+|  |  |
 
 ```js
 <!DOCTYPE html>
