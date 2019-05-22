@@ -41,11 +41,35 @@
 
 **实践对象封装了事件发生的详细信息,尤其是鼠标,键盘事件.如鼠标事件发生的位置,键盘事件的键盘键等**
 
-> > #### IE中的事件对象
+> * #### IE中的事件对象
 
+**IE中的事件对象是一个隐式可用的全局对象:event,它是window对象的一个属性.**
 
+```js
+op.onclick=function(){
+var oEvent=window.event;
+}
+```
 
+> * #### 标准DOM中的事件对象
 
+**在标准DOM浏览器检测到发生了某个事件时,将自动创建一个Event对象,并隐式地将该对象作为事件处理函数的第一个参数传入.**
+
+```js
+op.onclick=function(oEvent){
+  //作为参数传进来
+}
+```
+
+* [x] **经验之谈:为了兼容不同的浏览器,通常采用下面的方法得到事件对象.**
+
+```js
+op.onclick=function(oEvent){
+	if(window.event){
+		oEvent=window.event;
+	}
+}
+```
 
 
 
