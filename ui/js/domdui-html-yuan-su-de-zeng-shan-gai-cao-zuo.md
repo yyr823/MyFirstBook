@@ -1,6 +1,37 @@
-![](/assets/bo8.png)![](/assets/bo9.jpg)![](/assets/bo10.png)![](/assets/bo11.png)![](/assets/bo11.jpg)
+#### ![](/assets/bo8.png)![](/assets/bo9.jpg)**为了动态地修改HTML元素,须先访问HTML元素。 DOM主要提供了两种方式来访问 HTML元素:**
 
-![](/assets/kk1.jpg)**代码示例:**
+* 根据 l D访问HTML元素一通过document对象调用getE l ementById\(\)方法来查找具有唯一id属性值的元素。 
+
+* 利用节点关系访问HTML元素。常用的属性和方法如下:
+
+| parentNode            | 返回当前节点的父节点 |
+| :---: | :--- |
+| previousSibling        | 返回当前节点的前一个兄弟节点 |
+| nextSibling | 返回当前节点的后一个兄弟节点 |
+| childNodes | 返回当前节点的所有子节点 |
+| firstChild | 返回当前节点的第一个子节点 |
+| lastChild | 返回当前节点的最后一个子节点 |
+| getElementsByTagName\(tagName\)  | 返回当前节点的具有指定标签名的所有子节点 |
+
+![](/assets/bo11.jpg)
+
+* > #### DOM创建节点的方法:
+
+* [x]  **document.createElement\(Tag\),Tag必须是合法的HTML元素**
+
+* > #### DOM复制节点的方法:
+
+1. [x] **节点cloneNode\(boolean deep\),当deep为true时,表示复制当前节点以及当前节点的全部后代节点\(深复制\)。为false时,只复制当前节点浅复制\)**
+
+* > #### DOM添加、 删除节点的方法:
+
+| appendChild\(newNode\)  | 将newNode添加成当前节点的最后一个子节点 |
+| :--- | :--- |
+| insertBefore\(newNode,refNode\) | 在 refNode节点之前插入newNode节点 |
+| replaceChild\(newNode,oldNode\) | 将ol dNode节点替换成newNode节点 |
+| removeChild\(oldNode\)  | 将oldNode子节点删除 |
+
+* [x] **代码示例:**
 
 ```html
 <!DOCTYPE html>
