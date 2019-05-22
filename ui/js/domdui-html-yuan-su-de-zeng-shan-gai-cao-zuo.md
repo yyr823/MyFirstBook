@@ -1,35 +1,35 @@
 #### ![](/assets/bo8.png)![](/assets/bo9.jpg)**为了动态地修改HTML元素,须先访问HTML元素。 DOM主要提供了两种方式来访问 HTML元素:**
 
-* 根据 l D访问HTML元素一通过document对象调用getE l ementById\(\)方法来查找具有唯一id属性值的元素。 
+* 根据 l D访问HTML元素一通过document对象调用getE l ementById\(\)方法来查找具有唯一id属性值的元素。
 
 * 利用节点关系访问HTML元素。常用的属性和方法如下:
 
-| parentNode            | 返回当前节点的父节点 |
+| parentNode | 返回当前节点的父节点 |
 | :---: | :--- |
-| previousSibling        | 返回当前节点的前一个兄弟节点 |
+| previousSibling | 返回当前节点的前一个兄弟节点 |
 | nextSibling | 返回当前节点的后一个兄弟节点 |
 | childNodes | 返回当前节点的所有子节点 |
 | firstChild | 返回当前节点的第一个子节点 |
 | lastChild | 返回当前节点的最后一个子节点 |
-| getElementsByTagName\(tagName\)  | 返回当前节点的具有指定标签名的所有子节点 |
+| getElementsByTagName\(tagName\) | 返回当前节点的具有指定标签名的所有子节点 |
+|  |  |
 
 ![](/assets/bo11.jpg)
 
 * > #### DOM创建节点的方法:
-
-* [x]  **document.createElement\(Tag\),Tag必须是合法的HTML元素**
+* [x] **document.createElement\(Tag\),Tag必须是合法的HTML元素**
 
 * > #### DOM复制节点的方法:
-
-1. [x] **节点cloneNode\(boolean deep\),当deep为true时,表示复制当前节点以及当前节点的全部后代节点\(深复制\)。为false时,只复制当前节点浅复制\)**
+* [x] **节点cloneNode\(boolean deep\),当deep为true时,表示复制当前节点以及当前节点的全部后代节点\(深复制\)。为false时,只复制当前节点浅复制\)**
 
 * > #### DOM添加、 删除节点的方法:
 
-| appendChild\(newNode\)  | 将newNode添加成当前节点的最后一个子节点 |
+| appendChild\(newNode\) | 将newNode添加成当前节点的最后一个子节点 |
 | :--- | :--- |
 | insertBefore\(newNode,refNode\) | 在 refNode节点之前插入newNode节点 |
 | replaceChild\(newNode,oldNode\) | 将ol dNode节点替换成newNode节点 |
-| removeChild\(oldNode\)  | 将oldNode子节点删除 |
+| removeChild\(oldNode\) | 将oldNode子节点删除 |
+|  |  |
 
 * [x] **代码示例:**
 
@@ -80,9 +80,31 @@
 </html>
 ```
 
-![](/assets/K5.png)**提示:并不是每次构造函数都需指明4个参数,可以指明一个或者两个都可以\(浏览器都兼容\).**
+> #### DOM为列表框、下拉菜单添加选项的方式
 
-![](/assets/K6.png)
+* [x] **创建选项除了使用前面所示一createElement方法之外, 还可以使用专门的构造器来构造一个选项出来 。 **
+
+* [x] **语法如下:**
+
+```
+new Option(text,value,defaultSelected,selected)
+```
+
+* [x] **该构造器有4个参数**
+
+| text | 该选项的文本、即该选项所呈现的”内容” |
+| :--- | :--- |
+| value | 选中该选项的值 |
+| defaultSelected  | 设置默认是否显示该选项 |
+| selected  | 设置该选项当前是否被选中 |
+
+**提示:并不是每次构造函数都需指明4个参数,可以指明一个或者两个都可以\(浏览器都兼容\).**
+
+* ** 添加创建好的选项至列表框或下拉菜单的方式**
+
+* [x] 直接为&lt;select.../&gt;的指定选项赋值
+
+**`列表框或下拉菜单对象. options[i] =创建好的opt i on对象`**
 
 * **删除列表框或下拉菜单的选项的方法**
 
@@ -135,7 +157,17 @@
 </html>
 ```
 
-![](/assets/k7.png)
+> #### DOM动态添加删除表格内容所使用到的常用方法
+
+| insertRow\(index\)  | 在指定索引位置插入一行 |
+| :--- | :--- |
+| createCaption\(\) | 为该表格创建标题 |
+| createTFoot\(\) | 为该表格创建&lt;tfoot. .. /&gt;元素,假如已存在就返回现有的 |
+| createTHead\(\) | 为该表格创建&lt;thead. .. /&gt;元素,假如已存在就返回现有的 |
+| deleteRow\(index\)  | 删除表格中 i ndex索引处的行 |
+| deleteCaption\(\) | 删除表格标题 |
+| deleteTFoot\(\) | 从表格删除 tFoot元素及其内容 |
+| deleteTHead\(\) | 从表格删除 tHead元素及其内容 |
 
 * **给表格行创建,删除单元格的方法:**
 
