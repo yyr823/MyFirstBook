@@ -104,7 +104,7 @@ context.fillRect(50,25,100,50);
 
 * [x] **设置文本的字体、大小和样式**
 
-要设置字体、大小和样式,需要用到上下文对象的 **font**属性。样式可以是**normal,  itaIic或bold.**默认情况是 normal 。
+要设置字体、大小和样式,需要用到上下文对象的 **font**属性。样式可以是**normal,itaIic或bold.**默认情况是 normal 。
 
 * [x] **设置文本颜色**
 
@@ -306,7 +306,7 @@ sourceX,sourceY, sourGeWidth, sourceHeight,destWidth和destHeight。
 
 > #### 绘制透明度
 
-`globalAlpha属性`设置或还回绘图的当前透明值.属性值必须是介于** 0.0\(完全透明\) 与1.0\(不透明\) ** 之间的数字。
+`globalAlpha属性`设置或还回绘图的当前透明值.属性值必须是介于**0.0\(完全透明\)与1.0\(不透明\)**之间的数字。
 
 ```js
   <script>
