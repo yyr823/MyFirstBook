@@ -114,9 +114,27 @@ context.fillRect(50,25,100,50);
 
 要描绘字体边缘的效果,要使用 strokeText\(\)方法替代filIText\(\), 同时要用strokeStyle属性替代 filIStyIe属性。
 
+```js
+  <script>
+    window.onload = function () {
+      let canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      let x = canvas.width / 2;
+      let y = canvas.height / 2;
+      context.font = "italic 40px Arial";
+      context.fillStyle = "#ff0000";
+      context.fillText("Hello World", x, y);
+      context.lineWidth = 2;
+      context.strokeText("Hello World", x, y + 50);
+    }
+  </script>
+```
+
+![](/assets/K4.png)
+
 * [x] **绘制文本对齐**
 
-文本的对齐功能设定使用 textAl ign属性。其可用的选项包括start, end,  left, center和 right。
+文本的对齐功能设定使用 textAlign属性。其可用的选项包括start, end,  left, center和 right。
 
 * [x] **文本度量**
 
@@ -125,6 +143,44 @@ context.fillRect(50,25,100,50);
 * [x] **文本换行**
 
 要实现文本换行功能, 我们需要创建一个用户自定义函数, 此函数需要canvas上下文对象,一个文本字符串、一个位五、一个最大宽度和行高度信息.函数将使用 measureText\(\)计算何时换行。
+
+```js
+  <script>
+    window.onload = function () {
+      let canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      let text = "They say a person needs just three things to be truly happy in this world: someone to love, something to do, and something to hope for.";
+      let maxWidth = 300;//每一行绘制的长度,超过就换行
+      let lineHeight = 25;//设置行之间的间隔
+      let x = (canvas.width - maxWidth) / 2;//绘制起始坐标
+      let y = 30;
+      context.font = "16px Arial";
+      context.fillStyle = "#000fff";
+      wrapText(context, text, x, y, maxWidth, lineHeight);
+    };
+    function wrapText(context, text, x, y, maxWidth, lineHeight) {
+      let words = text.split(" ");//以空格把字符串分割并存到数组里
+      let line = "";
+      for (let n = 0; n < words.length; n++) {
+        let testLine = line + words[n] + " ";
+        let metrics = context.measureText(testLine);
+        let testWidth = metrics.width;//得到测量字符的宽度
+        if (testWidth > maxWidth) {
+          context.fillText(line, x, y);
+          line = words[n] + " "; //重新给line赋值,绘制下一行
+          y += lineHeight;//y坐标要加上行高,在上一行的下方绘制,避免绘制的内哦平重叠
+        } else {
+          line = testLine;
+        }
+      }
+      context.fillText(line, x, y);//绘制文本
+    }
+  </script>
+```
+
+![](/assets/K5.png)
+
+> ####  ** 据说一个人在这个世上获得真正的幸福需要三件事情：有人爱，有事做，有所期待。**
 
 ![](/assets/K2.png)
 
@@ -140,7 +196,7 @@ context.fillRect(50,25,100,50);
      context.arcTo(150,20,150,70,50);
      context.lineTo(150,120);
      context.stroke();     
-     
+
      context.beginPath();
      context.moveTo(100,20);
      //第一条直线
@@ -172,43 +228,85 @@ context.fillRect(50,25,100,50);
 
 首先使用 createLinearGradient\(\)方法创建canvasGradient对象, **语法如下:**
 
-**`var grad=context.createLinearGradient(X1, Y1, X2, Y2);`**
+`var grad=context.createLinearGradient(X1, Y1, X2, Y2);`
 
-其中X1、 Y1为渐变的起点, X2、 Y2为渐变的终点。然后使用 addColorStop方法定义色标的位置并上色 
+其中X1、 Y1为渐变的起点, X2、 Y2为渐变的终点。然后使用 addColorStop方法定义色标的位置并上色
 
-grad. addColor\(position, color\) ;其中参数pos ition为渐变中色标的相对位置 \(偏移量\) 
+grad. addColor\(position, color\) ;其中参数pos ition为渐变中色标的相对位置 \(偏移量\)
 
-> ####  绘制图像的方法
+```js
+  <script>
+    window.onload=function(){
+      let c=document.getElementById("myCanvas");
+      let context=c.getContext("2d");
+      //线性渐变
+      let clg=context.createLinearGradient(0,0,100,200);
+      clg.addColorStop(0,"#ff0000");
+      clg.addColorStop(0.5,"#00ff00");
+      clg.addColorStop(1,"#0000ff");
+      context.fillStyle=clg;
+      context.strokeStyle=clg;
+      context.fillRect(10,10,200,200);
+      //径向渐变
+      let crg=context.createRadialGradient(325,100,20,325,100,80);
+      crg.addColorStop(0,"#ffffff");
+      crg.addColorStop(0.75,"#ff0000");
+      crg.addColorStop(1,"#000000");
+      context.fillStyle=crg;
+      context.fillRect(230,10,200,200);
+    }
+  </script>
+```
 
-*  context.drawlmage\(imageObj, x,y\) ; 
+![](/assets/K3.png)
+
+> #### 绘制图像的方法
+
+* context.drawlmage\(imageObj, x,y\) ; 
 
 此方法需要一个图像对象和一个起始点坐标作为参数, 其中起始点坐标是相对于canvas的左上角的位置
 
 * context. drawlmage\(imageObj, x, y, width,  height\); 
 
-drawlmage方法还可以接受 width和 height两个参数用来以任意指定的尺寸显示图像。 
+drawlmage方法还可以接受 width和 height两个参数用来以任意指定的尺寸显示图像。
 
 * context. drawlmage\(imageObj,sx,sy,sw, sh, dx, dy, dw, dh\); 
 
 drawlmage方法还可以增加另六个参数来实现对图像的裁剪 。 这六个参数是
 
-sourceX,sourceY, sourGeWidth, sourceHeight,destWidth和destHeight。 
+sourceX,sourceY, sourGeWidth, sourceHeight,destWidth和destHeight。
 
-> ####  绘制阴影
+```js
+  <script>
+    window.onload=function(){
+      let c=document.getElementById("myCanvas");
+      let context=c.getContext("2d");
+     let image=new Image();
+     image.src="icon.png";
+     image.onload=function(){
+       context.drawImage(image,10,10);//原始图片的大小
+      context.drawImage(image,10,10,200,200);//绘制图片的大小
+      context.drawImage(image,50,40,300,450,50,50,350,450);//裁剪后的图像
+     }
+    }
+  </script>
+```
+
+> #### 绘制阴影
 
 **要为图形添加明影需要用到:**
 
-**`shadowColor:阴影颜色`**
+`shadowColor:阴影颜色`
 
-**`shadowB1ur:阴影模糊度`**
+`shadowB1ur:阴影模糊度`
 
-**`shadowOffsetX:设置或返回阴影与形状的水平距高`**
+`shadowOffsetX:设置或返回阴影与形状的水平距高`
 
-**`shadowOffsetY:设置或返回阴影与形状的垂直距高`**
+`shadowOffsetY:设置或返回阴影与形状的垂直距高`
 
 > #### 绘制透明度
 
-**`globalAlpha 属性`**设置或还回绘图的当前透明值.属性值必须是介于 0.0\(完全透明\) 与1.0\(不透明\)  之间的数字。 
+`globalAlpha 属性`设置或还回绘图的当前透明值.属性值必须是介于 0.0\(完全透明\) 与1.0\(不透明\)  之间的数字。
 
 ```js
   <script>
@@ -245,4 +343,30 @@ sourceX,sourceY, sourGeWidth, sourceHeight,destWidth和destHeight。
 `context. createPattern(image, type);`
 
 其中type必须为下面字符串之一: `repeat、 repeat-x、 repeat-y、 no-repeat`
+
+```js
+<script>
+    function draw(type){
+      let c=document.getElementById("myCanvas");
+      let canvas=c.getContext("2d");
+      canvas.clearRect(0,0,500,400);
+      let img=document.getElementById("butterfly");
+      let pat=canvas.createPattern(img,type);
+      canvas.rect(0,0,500,400);
+      canvas.fillStyle=pat;
+      canvas.fill();
+    }
+  </script>
+<body>
+<p>图像的使用:</p>
+<img src="icon.png" id="butterfly"/><br>
+<button onclick="draw('repeat')">Repeat</button>
+<button onclick="draw('repeat-x')">Repeat-x</button>
+<button onclick="draw('repeat-y')">Repeat-y</button>
+<button onclick="draw('no-repeat')">no-repeat</button>
+<canvas id="myCanvas" width="500" height="400"></canvas>
+</body>
+```
+
+
 
