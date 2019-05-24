@@ -57,15 +57,15 @@ context.fillRect(50,25,100,50);
 
 * 绘制矩形
 
-绘制矩形使用** rect\(\)**方法。每个短形需要由左上角坐标\(x, y\) 和矩形的宽与高 \(width,height\)来确定。
+绘制矩形使用**rect\(\)**方法。每个短形需要由左上角坐标\(x, y\) 和矩形的宽与高 \(width,height\)来确定。
 
 * 绘制圆
 
-画圆只需要在调用 **arc\(\)**方法时,将起始角度设为0,终止角度设为2 \* Pl即可。
+画圆只需要在调用**arc\(\)**方法时,将起始角度设为0,终止角度设为2 \* Pl即可。
 
 * 图形的颜色填充
 
-要填充图形,需要用 **filIStyIe**属性设五填充图形用的颜色,然后使用 **fill\(\)**方法完成对图形的填充。默认情况下,   fillStyle的颜色是黑色。
+要填充图形,需要用**filIStyIe**属性设五填充图形用的颜色,然后使用**fill\(\)**方法完成对图形的填充。默认情况下,   fillStyle的颜色是黑色。
 
 ```js
 <script>
@@ -104,7 +104,7 @@ context.fillRect(50,25,100,50);
 
 * [x] **设置文本的字体、大小和样式**
 
-要设置字体、大小和样式,需要用到上下文对象的 **font**属性。样式可以是** normal,  itaIic或bold.**默认情况是 normal 。
+要设置字体、大小和样式,需要用到上下文对象的 **font**属性。样式可以是**normal,  itaIic或bold.**默认情况是 normal 。
 
 * [x] **设置文本颜色**
 
@@ -142,7 +142,7 @@ context.fillRect(50,25,100,50);
 
 * [x] **文本换行**
 
-要实现文本换行功能, 我们需要创建一个用户自定义函数, 此函数需要**canvas**上下文对象,一个文本字符串、一个位五、一个最大宽度和行高度信息.函数将使用 **measureText**\(\)计算何时换行。
+要实现文本换行功能, 我们需要创建一个用户自定义函数, 此函数需要**canvas**上下文对象,一个文本字符串、一个位置、一个最大宽度和行高度信息.函数将使用 **measureText**\(\)计算何时换行。
 
 ```js
   <script>
@@ -180,7 +180,7 @@ context.fillRect(50,25,100,50);
 
 ![](/assets/K5.png)
 
-> #### ** 据说一个人在这个世上获得真正的幸福需要三件事情：有人爱，有事做，有所期待。**
+> #### **据说一个人在这个世上获得真正的幸福需要三件事情：有人爱，有事做，有所期待。**
 
 ![](/assets/K2.png)
 
@@ -222,7 +222,7 @@ context.fillRect(50,25,100,50);
 
 `var grad=context.createRadialGradient(X1,Y1,R1,X2,Y2, R2);`
 
-其中X1,Y1,R1定义一个以\(X1, Y1\)为原点、半径为R1的国。 X2,Y2,R2定义一个以\(X2, Y2\)为原点、半径为R2的圆。然后使用 addColorStop方法定义色标的位置并上色 。grad. **addColorStop**\(position, color\) ;其中参数position为渐变中色标的相对位置 \(偏移量\) 
+其中X1,Y1,R1定义一个以\(X1, Y1\)为原点、半径为R1的国。 X2,Y2,R2定义一个以\(X2, Y2\)为原点、半径为R2的圆。然后使用 addColorStop方法定义色标的位置并上色 。grad. **addColorStop**\(position, color\) ;其中参数position为渐变中色标的相对位置 \(偏移量\)
 
 > #### 绘制线性渐变
 
@@ -262,15 +262,15 @@ grad. **addColorStop**\(position, color\) ;其中参数position为渐变中色�
 
 > #### 绘制图像的方法
 
-* **context.drawlmage\(imageObj, x,y\) ; **
+* **context.drawlmage\(imageObj, x,y\);**
 
 此方法需要一个图像对象和一个起始点坐标作为参数, 其中起始点坐标是相对于canvas的左上角的位置
 
-* **context. drawlmage\(imageObj, x, y, width,  height\); **
+* **context. drawlmage\(imageObj, x, y, width,  height\);**
 
 drawlmage方法还可以接受 width和 height两个参数用来以任意指定的尺寸显示图像。
 
-* **context. drawlmage\(imageObj,sx,sy,sw, sh, dx, dy, dw, dh\); **
+* **context. drawlmage\(imageObj,sx,sy,sw, sh, dx, dy, dw, dh\);**
 
 drawlmage方法还可以增加另六个参数来实现对图像的裁剪 。 这六个参数是
 
@@ -296,17 +296,17 @@ sourceX,sourceY, sourGeWidth, sourceHeight,destWidth和destHeight。
 
 **要为图形添加明影需要用到:**
 
-**`shadowColor:阴影颜色`**
+`shadowColor:阴影颜色`
 
-**`shadowB1ur:阴影模糊度`**
+`shadowB1ur:阴影模糊度`
 
-**`shadowOffsetX:设置或返回阴影与形状的水平距高`**
+`shadowOffsetX:设置或返回阴影与形状的水平距高`
 
-**`shadowOffsetY:设置或返回阴影与形状的垂直距高`**
+`shadowOffsetY:设置或返回阴影与形状的垂直距高`
 
 > #### 绘制透明度
 
-**`globalAlpha 属性`**设置或还回绘图的当前透明值.属性值必须是介于** 0.0\(完全透明\) 与1.0\(不透明\) ** 之间的数字。
+`globalAlpha属性`设置或还回绘图的当前透明值.属性值必须是介于** 0.0\(完全透明\) 与1.0\(不透明\) ** 之间的数字。
 
 ```js
   <script>
@@ -340,9 +340,9 @@ sourceX,sourceY, sourGeWidth, sourceHeight,destWidth和destHeight。
 
 用上下文对象的 **createPattern**\(\)方法创建一个图案填充对象, **语法如下:**
 
-**`context.createPattern(image, type);`**
+`context.createPattern(image, type);`
 
-其中type必须为下面字符串之一: **`repeat、 repeat-x、 repeat-y、 no-repeat`**
+其中type必须为下面字符串之一: `repeat、 repeat-x、 repeat-y、 no-repeat`
 
 ```js
 <script>
