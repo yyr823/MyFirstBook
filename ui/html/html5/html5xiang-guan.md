@@ -73,7 +73,7 @@
 | **formmethod** | 定义发送表单数据到 actionURL的 HTTP方法 |
 | **formtarget** | 规定表示提交表单后在哪里显示接收到响应的名称或关键词 |
 | **formnovalidate** | 覆盖&lt;form&gt;元素的写属性novalidate属性 |
-| **除了formnovalidate属性** | **其它属性都是只针对 type="submit"和 type="image" ** |
+| **除了formnovalidate属性** | **其它属性都是只针对 type="submit"和 type="image"** |
 | 新增的height和width属性 | 规定&lt;input&gt;元素的高度\(只针对type="image"\) |
 | email | 定义用于 email地址的字段 |
 | url | 定义用于输入 URL的字段 |
