@@ -372,52 +372,159 @@ sourceX,sourceY, sourGeWidth, sourceHeight,destWidth和destHeight。
 
 * 移动坐标空间
 
-使用 translate\(\) 方法可以将绘图原点横向和纵向的移动到指定的距离\(x, y\),结果表现为整张图像的移动。 
+使用 translate\(\) 方法可以将绘图原点横向和纵向的移动到指定的距离\(x, y\),结果表现为整张图像的移动。
 
 * 旋转坐标空间
 
-旋转canvas用的方法是 rotate\(\)。此方法接受一个以弧度为单位的旋转参教,整个canvas将以坐标原点,也就是由 transIate\(\)所确定的原点为圆心进行旋转。 
+旋转canvas用的方法是 rotate\(\)。此方法接受一个以弧度为单位的旋转参教,整个canvas将以坐标原点,也就是由 transIate\(\)所确定的原点为圆心进行旋转。
 
 * 缩放图形
 
-缩放操作使用 scale\(\)方法,参数x、 y分别代表横向与纵向的缩放比例, 两个参数都是浮点数, 1. 0表示不缩放, 小于1. 0表示缩小,大于1. 0表示放大。 
+缩放操作使用 scale\(\)方法,参数x、 y分别代表横向与纵向的缩放比例, 两个参数都是浮点数, 1. 0表示不缩放, 小于1. 0表示缩小,大于1. 0表示放大。
+
+```js
+  <script>
+    window.onload = function () {
+      let canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      let rectWidth=150;
+      let  rectHeight=75;
+      context.fillStyle="#ff0000";
+      //把坐标原点移动到canvas中心点
+      context.translate(canvas.width/2,canvas.height/2);
+      //顺时针旋转45度
+      context.rotate(0.25*Math.PI);
+      //坐标在纵向上缩小一半
+      context.scale(1,0.5);
+      context.fillRect(-rectWidth/2,-rectHeight/2,rectWidth,rectHeight);
+    }
+  </script>
+```
 
 * 保存与恢复canvas状态
 
-使用save\(\)和 restore\(\)方法可以实现对坐标变换状态的保存与恢复。 
+使用save\(\)和 restore\(\)方法可以实现对坐标变换状态的保存与恢复。
+
+```js
+  <script>
+    window.onload = function () {
+      let canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      //所绘制矩形的宽度和高度
+      let rectWidth = 150;
+      let rectHeight = 75;
+      context.save();//保存状态1(坐标0,0)
+      context.translate(canvas.width / 2, canvas.height / 2);
+      context.save();//保存状态2(坐标移动到画布中间)
+      context.rotate(Math.PI / 4);
+      context.save();//保存状态3 (按中心点旋转45)
+      context.scale(2, 2);//矩形宽度和高度增加2倍
+      context.fillStyle = "blue";
+      context.fillRect(-rectWidth / 2, -rectHeight / 2, rectWidth, rectHeight);
+      context.restore();//回复状态3
+      context.fillStyle = "red";
+      context.fillRect(-rectWidth / 2, -rectHeight / 2, rectWidth, rectHeight);
+      context.restore();//回复状态2
+      context.fillStyle = "yellow";
+      context.fillRect(-rectWidth / 2, -rectHeight / 2, rectWidth, rectHeight);
+      context.restore();//回复状态1
+      context.fillStyle = "green";
+      context.fillRect(-rectWidth / 2, -rectHeight / 2, rectWidth, rectHeight);
+    }
+  </script>
+```
 
 > #### 图形的组合
 
-globalCompositeOperation 属性设置或返回如何将一个源 \(新的\) 图像绘制到日标\(已有的\)的图像上。 
+globalCompositeOperation 属性设置或返回如何将一个源 \(新的\) 图像绘制到日标\(已有的\)的图像上。
 
-属性值如下: 
+属性值如下:
 
 | source-over | 默认。在目标图像上显示源图像 |
 | :--- | :--- |
 | source-atop | 在目标图像顶部显示源图像。源图像位于目标图像之外的部分是不可见的 |
-| source-in  | 在目标图像中显示源图像。只有目标图像之内的源图像部分会显示, 目标图像是透明的 |
+| source-in | 在目标图像中显示源图像。只有目标图像之内的源图像部分会显示, 目标图像是透明的 |
 | source-out | 在 目标图像之外显示源图像.只有目标图像之外的源图像部分会显示,目标图像是透明的 |
 | destination-over | 在源图像上显示目标图像 |
 | destination-atop | 在源图像顶部显示目标图像。目标图像位于源图像之外的部分是不可见的 |
 | destination-in | 在源图像中显示目标图像。只有源图像之内的目标图像部分会被显示, 源图像是透明的 |
 | destination-out | 在源图像之外显示目标图像。只有源图像之外的目标图像部分会被显示, 源图像是透明的 |
-| lighter | 显示源图像+ 目标图像 |
+| lighter | 显示源图像+ 目标图像,交叉处高亮显示 |
+| darker | 显示源图像+目标图像 |
 | copy | 显示源图像。忽略目标图像 |
-| xor  | 使用异或操作对源图像与目标图像进行组合。  |
+| xor | 使用异或操作对源图像与目标图像进行组合。 |
 
 * #### **红色源图像    蓝色目标图像**
+
+```js
+  <script>
+    window.onload = function () {
+      let canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      //绘制矩形
+      context.beginPath();
+      context.rect(200, 20, 100, 100);
+      context.fillStyle = "blue";
+      context.fill();
+      context.globalCompositeOperation = "source-over";
+      context.globalCompositeOperation = "source-atop";
+      context.globalCompositeOperation = "source-in";
+      context.globalCompositeOperation = "destination-in";
+      context.globalCompositeOperation = "destination-out";
+      context.globalCompositeOperation = "lighter";
+      context.globalCompositeOperation = "darker";
+      context.globalCompositeOperation = "xor";
+      context.globalCompositeOperation = "copy";
+      //绘制圆
+      context.beginPath();
+      context.arc(320, 120, 60, 0, 2 * Math.PI, false);
+      context.fillStyle = "red";
+      context.fill();
+
+    }
+  </script>
+```
 
 ![](/assets/kt.png)
 
 > #### 图形的裁切
 
-clip\(\)方法从原始画布中剪切任意的形状和尺寸 。 
+clip\(\)方法从原始画布中剪切任意的形状和尺寸 。
 
 **提示:** 一旦剪切了某个区域, 则所有之后的绘图都会被限制在被剪切的区域内 \(不能访问画布上的其他区域\) 。 您也可以在使用
 
 clip\(\)方法前通过使用 save\(\)方法对当前画布区域进行保存, 并在以后的任意时间对其进行恢复\(通过 restore\(\)方法\) 。
 
+```js
+ <script>
+    window.onload = function () {
+      let canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      context.rect(50, 20, 200, 120);
+      context.stroke();
+      context.fillStyle = "red";
+      context.fillRect(0, 0, 150, 100);
+      let canvas1 = document.getElementById("myCanvas2");
+      let context1 = canvas1.getContext("2d");
+      context1.rect(50, 20, 200, 120);
+      context1.stroke();
+      context1.clip();//裁切
+      context1.fillStyle = "red";
+      context1.fillRect(0, 0, 150, 100);
+    }
+  </script>
+</head>
+<body>
+<span>没有裁切之前:</span><br>
+<canvas id="myCanvas" width="300" height="150">
+  您的浏览器不支持HTML5 canvas标签
+</canvas>
+<span>裁切之后:</span>
+<canvas id="myCanvas2" width="300" height="150">
+  您的浏览器不支持HTML5 canvas标签
+</canvas>
+</body>
+```
 
-
-
+![](/assets/kt2.png)
 
