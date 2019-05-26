@@ -65,6 +65,7 @@
       * [新增form元素或属性](ui/html/html5/xin-zeng-form-yuan-su-huo-shu-xing.md)
       * [HTML5相关](ui/html/html5/html5xiang-guan.md)
       * [Canvas](ui/html/html5/canvas.md)
+      * 多媒体
   * [Ztree](ui/ztree.md)
     * [获取子节点所有父节点的name的拼接](ui/ztree/huo-qu-zi-jie-dian-suo-you-fu-jie-dian-de-name-de-pin-jie.md)
   * [网站中英文切换](ui/wang-zhan-zhong-ying-wen-qie-huan.md)
