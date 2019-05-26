@@ -35,7 +35,6 @@
 | E:optional | 用于匹配可选的输入元素 |
 | E:required | 用于匹配设置了"required"属性的元素 |
 | E:valid E:invalid | 匹配输入值为合法、非法的元素 |
-|  |  |
 
 > #### 其它CSS3选择器
 
