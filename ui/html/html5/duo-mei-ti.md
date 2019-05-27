@@ -70,7 +70,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>音频、视频相关方法</title>
+  <title>音频、视频相关属性</title>
 </head>
 <body>
 <button onclick="getFirstBuffRange()" type="button">获得第一个缓冲范围</button>
@@ -252,7 +252,6 @@
 </script>
 </body>
 </html>
-
 ```
 
 > #### 音频视频相关方法
