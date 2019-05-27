@@ -7,7 +7,7 @@
 
 ```css
 a[src^="https"]  选择其src属性值以 "https"开头的每个<a>元素
-a[src$=".pdf"]   选择其src属性以 ".pdf" 结尾的所有 <a>元素
+a[src$=".pdf"]   选择其src属性以 ".pdf"结尾的所有 <a>元素
 a[src*="abc"]    选择其src属性中包含 "abc"子串的每个<a>元素
 ```
 
