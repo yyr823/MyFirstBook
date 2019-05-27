@@ -59,7 +59,7 @@
 | git checkout \[branchName\] | 切换到该分支下 |
 | git branch | 查看当前所包含的分支 |
 | git merge \[branchName\] | 合并指定分支到当前分支 |
-| git_** merge **_--no-ff   \[branchName\] | 合并分支时禁用Fast forward |
+| git_** **merge** **_--no-ff   \[branchName\] | 合并分支时禁用Fast forward |
 | git branch -d \[branchName\] | 删除分支 |
 | git branch -D \[branchName\] | 强制删除一个还没有合并（已经commit）的分支 |
 | git branch -a | 列出所有本地分支和远程分支 |
