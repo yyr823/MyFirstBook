@@ -72,7 +72,7 @@
 | git stash pop | 恢复工作现场并删除stash内容 |
 | git stash list | 查看stash 内容 |
 | git stash apply stash@{0} | 指定恢复的stash |
-| \*_** tag**_ |  |
+| \*_**tag**_ |  |
 | git tag  \[tagName\] | 新建一个标签,默认为HEAD |
 | git tag  -a \[ tagName\]  -m '备注信息'  commit id | 给该提交id打一个带有说明的标签 -a 指定标签名 -m指定说明文字 |
 | git tag | 查看所有标签 |
