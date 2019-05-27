@@ -35,7 +35,7 @@
 | git checkout  --  \[fileName\] | 把文件在工作区的修改/删除全部撤销 |
 | git checkout . | 撤销工作区的全部修改\(未添加到暂存区:,撤销后回到与版本库一模一样的状态 已添加到暂存区并做了修改:回到最近一次commit/add时的状态 \) |
 | git checkout -b \[branchName\] \[remote\]/\[branchName\] | 创建远程remote 下的分支到本地 |
-| \*_** rm  **_ |  |
+| \*_**rm**_ |  |
 | rm \[fileName\] | 删除工作区文件\(不会放进暂存区\) |
 | git rm \[fileName\] | 从版本库删除该文件\(记得删除后进行提交\)会放进暂存区 |
 | \*_**git remote**_ |  |
@@ -59,7 +59,7 @@
 | git checkout \[branchName\] | 切换到该分支下 |
 | git branch | 查看当前所包含的分支 |
 | git merge \[branchName\] | 合并指定分支到当前分支 |
-| git_** **merge** **_--no-ff   \[branchName\] | 合并分支时禁用Fast forward |
+| git merge --no-ff   \[branchName\] | 合并分支时禁用Fast forward |
 | git branch -d \[branchName\] | 删除分支 |
 | git branch -D \[branchName\] | 强制删除一个还没有合并（已经commit）的分支 |
 | git branch -a | 列出所有本地分支和远程分支 |
