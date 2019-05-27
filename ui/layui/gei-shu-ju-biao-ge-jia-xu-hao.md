@@ -11,18 +11,18 @@
     ]]
 ```
 
-这样的话下一页里面的排序不会连着上一页的,点击下一页时,只会重新从1开始排序
+**需注意:点击下一页时,只会重新从1开始排序**
 
-* **第二种需求,包括分页的数据也加上序号**
+* **第二种需求,包括分页的数据也加上序号\(连续性排序\)**
 
 ```js
 ,cols: [[
     {field:'tourPlayerId', width:80, title: 'ID1', sort: true,fixed: 'left',}
-    ,{field:'zizeng', width:80, title: '排名',fixed: 'left',	type:'numbers'}
+    ,{field:'zizeng', width:80, title: '排名',fixed: 'left',    type:'numbers'}
     ]]
 ```
 
 **设定列类型。可选值有：normal\(常规列,无需设定\)、checkbox\(复选框列\)、space\(空列\)、numbers\(序号列\)**
 
-**注意:该参数为 layui 2.2.0 新增。而如果是之前的版本,复选框列采用 checkbox:true、空列采用 space: true.**
+**注意:该参数为 layui 2.2.0 新增。而如果是之前的版本,复选框列采用 checkbox:true、空列采用 space: true**
 
