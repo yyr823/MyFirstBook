@@ -1,49 +1,49 @@
+* #### [原文链接](https://blog.csdn.net/qq_43135507/article/details/90600759)
 * 前台使用的是layui  由于后台jpa多表查询使用的是 List&lt;Map&lt;String, Object&gt;&gt; 自定义字段输出 因此时间create\_time方面会出现问题,template定义的有解决方法.
 
 * 前台部分代码
 
 ```js
-	table.render({
-			elem: '#demo',
-			url: server + 'orders/getAllOrders',
-			cellMinWidth: 80,
-			size: 'lg',
-			title: 'orders',
-			cols: [
-				[ //标题栏
-					{
-						checkbox: true
-					},
-					{
-						field: 'order_no',
-						title: 'orderNo',
-							sort: true
-						},
-					{
-						field: 'uno',
-						title: 'uno',
-						sort: true,
-						align: 'center'
-					},
-					{
-						field: 'create_time',
-						title: 'createTime',
-							sort: true,
+    table.render({
+            elem: '#demo',
+            url: server + 'orders/getAllOrders',
+            cellMinWidth: 80,
+            size: 'lg',
+            title: 'orders',
+            cols: [
+                [ //标题栏
+                    {
+                        checkbox: true
+                    },
+                    {
+                        field: 'order_no',
+                        title: 'orderNo',
+                            sort: true
+                        },
+                    {
+                        field: 'uno',
+                        title: 'uno',
+                        sort: true,
+                        align: 'center'
+                    },
+                    {
+                        field: 'create_time',
+                        title: 'createTime',
+                            sort: true,
   //特殊日期格式转换2018-12-03T17:17:36.000+08:00 转化为2018-12-03 00:00:00(正则表达式的方法)
-						templet: function(d) { 
-							var dateee = new Date(d.create_time).toJSON();    
-							var date = new Date(+new Date(dateee) + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '') 
-							return date;
-						},
-						align: 'center'
-					}
-					,.....
-					]]
-					});
-
+                        templet: function(d) { 
+                            var dateee = new Date(d.create_time).toJSON();    
+                            var date = new Date(+new Date(dateee) + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '') 
+                            return date;
+                        },
+                        align: 'center'
+                    }
+                    ,.....
+                    ]]
+                    });
 ```
 
-*  实体类接收前台传来条件
+* 实体类接收前台传来条件
 
 ```java
 /**
@@ -69,7 +69,7 @@ public class ProductSelect {
 }
 ```
 
-*  Controller方法定义
+* Controller方法定义
 
 ```java
    @ApiOperation(value = "条件查询订单详细信息并进行分页", notes = "条件查询订单详细信息并进行分页")
@@ -115,10 +115,9 @@ public class ProductSelect {
         int total = productOrderDao.getTotal(name, order_type);
         return MapTool.paging(list, total);
     }
-
 ```
 
-*  MapTool工具类 \(layui前台接收数据时有一定格式要求的,所以要按一定格式返回\)
+* MapTool工具类 \(layui前台接收数据时有一定格式要求的,所以要按一定格式返回\)
 
 ```java
 public class MapTool {
@@ -133,7 +132,7 @@ public class MapTool {
     }
 ```
 
-*  接口:原生sql多表条件查询
+* 接口:原生sql多表条件查询
 
 ```java
 public interface ProductOrderDao extends JpaRepository<ProductOrder,Integer> {
@@ -165,34 +164,33 @@ public interface ProductOrderDao extends JpaRepository<ProductOrder,Integer> {
             "    AND  order_no LIKE concat('%',?2,'%')  " ,nativeQuery = true)
     int getTotal(String name, String type);
 }
-
 ```
 
-*  经测试可用,但需注意getAllOrders\(\)sql编写:排序时可先正常编写sql,运行后检查控制台sql语句后跟随的排序是如何定义的,以创建时间升序为例-本接口下sql语句后跟随的是
+* 经测试可用,但需注意getAllOrders\(\)sql编写:排序时可先正常编写sql,运行后检查控制台sql语句后跟随的排序是如何定义的,以创建时间升序为例-本接口下sql语句后跟随的是
 
 ```java
  order by p.create_time asc limit ?
 ```
 
- 后台sql中会自动给字段找了个别名引用,或许跟接口定义有关吧
+后台sql中会自动给字段找了个别名引用,或许跟接口定义有关吧
 
 ```java
- ProductOrderDao extends JpaRepository<ProductOrder,Integer> 
+ ProductOrderDao extends JpaRepository<ProductOrder,Integer>
 ```
 
-*  因此将查询后的数据重新放进另一张表并定义好别名p: 这样sql语句运行时就不会出现字段异常
+* 因此将查询后的数据重新放进另一张表并定义好别名p: 这样sql语句运行时就不会出现字段异常
 
 ```java
 select * from (需要查询的数据) p
 ```
 
-*  原接口本想使用
+* 原接口本想使用
 
 ```java
 Page<Map<String, Object>> getAllOrders( String name, String type, Pageable sort);
 ```
 
- 这样count就不需要手动再次编写,但是查询总数时出现问题 count查询语句不正确,因此放弃
+这样count就不需要手动再次编写,但是查询总数时出现问题 count查询语句不正确,因此放弃
 
- 最后分两步走,先条件查询数据,再条件查询count
+最后分两步走,先条件查询数据,再条件查询count
 
