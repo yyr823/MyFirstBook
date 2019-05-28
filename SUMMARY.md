@@ -28,6 +28,7 @@
     * [Java生成一定规则递增编号](chapter1/tools/javasheng-cheng-yi-ding-gui-ze-di-zeng-bian-hao.md)
   * [Jpa](chapter1/jpa.md)
     * [Jpa多表原生sql自定义字段条件查询并进行分页和排序](chapter1/jpa/jpaduo-biao-yuan-sheng-sql-zi-ding-yi-zi-duan-tiao-jian-cha-xun-bing-jin-xing-fen-ye-he-pai-xu.md)
+  * [知识链接](chapter1/zhi-shi-lian-jie.md)
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
