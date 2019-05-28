@@ -4,12 +4,12 @@
 
 * 作用: 可以设置一个或多个下拉阴影的框。
 
-* 语法: box-shadow:h-shadow  v-shadow   blur  spread  color
+* 语法: **`box-shadow:h-shadow  v-shadow   blur  spread  color`**
 
 * 语法描述:
 
 | 值 | 描述 |
-| :--- | :--- |
+| :---: | :---: |
 | h-shadow | 必需的。水平阴影的位置。允许负值 |
 | v-shadow | 必需的。垂直阴影的位置。 先许负值 |
 | blur | 可选。模糊距离 |
@@ -74,12 +74,12 @@ label{
 
 * 作用: 这个属性允许你为元素添加圆角边框。
 
-* 语法: border-radius:none\|&lt;length&gt;{1,4}\[/&lt;length&gt;{1,4}\]
+* 语法: **`border-radius:none|<length>{1,4}[/<length>{1,4}]`**
 
 * 语法描述:
 
 | length | 定义弯道的形状, 由浮点数和单位标识符组成的长度值, 不可为负值 |
-| :--- | :--- |
+| :---: | :--- |
 
 
 * ** 注意：每个半径的四个值的顺序是：左上角，右上角，右下角，左下角**
@@ -135,12 +135,12 @@ label{
 
 * 作用: 这个属性允许你为元素添加边框背景。
 
-* 语法: border-image:source slice width outset  repeat
+* 语法: **`border-image:source slice width outset  repeat`**
 
 * 语法插述:
 
 | 值 | 描述 |
-| :--- | :--- |
+| :---: | :---: |
 | source | 定义边框的背景图片源, 即图像URL |
 | slice | 定义如何裁切背景图像 |
 | width | 定义边框背景图像的显示大小 \(即边框显示大小\) |
@@ -177,9 +177,9 @@ label{
 
 * 作用:用来定义背景图像的大小
 
-* 语法: background-size:length\|percentage\|cover\|contain
+* 语法: **`background-size:length|percentage|cover|contain`**
 
-* 语法描述: 
+* 语法描述:
 
 | 值 | 描述 |
 | :--- | :--- |
@@ -188,11 +188,11 @@ label{
 | cover | 此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小\(以y轴为主\) |
 | contain | 此时会保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小\(以x轴为主\) |
 
-* [x] background-origin属性
+* [x] **background-origin属性**
 
 * 作用:用来定义背景图像的定位区域
 
-* 语法: background-origin:padding-box\|border-box\|content-box
+* 语法:**` background-origin:padding-box|border-box|content-box`**
 
 * 语法描述:
 
@@ -203,11 +203,11 @@ label{
 
 ![](/assets/cq1.png)
 
-* [x] background-clip属性
+* [x] **background-clip属性**
 
 * 作用:用来定义背景图像的裁剪区域
 
-* 语法: backgroud-clip:padding-box\|border-box\|content-box
+* 语法: **`backgroud-clip:padding-box|border-box|content-box`**
 
 * 语法描述:
 
@@ -218,7 +218,7 @@ label{
 
 > #### CSS3文本相关
 
-* [x] CSS3 @font-face规则
+* [x] **CSS3 @font-face规则**
 
 * 以前CSS的版本, 网页设计师不得不使用用户计算机上已经安装的字体。
 
@@ -275,11 +275,11 @@ font-weight:bold;
 
 * Embedded Open Type\(.eot\)格式:.eot字体是lE专用字体, 可以从TrueType创建此格式字体,支持这种字体的浏览器有\[lE4+\]
 
-* [x] word-wrap属性
+* [x] **word-wrap属性**
 
 * 作用: 用来定义文本超过指定容器的边界时是否断开转行
 
-* 语法: word-wrap:normal\|break-word
+* 语法: **`word-wrap:normal|break-word`**
 
 * 语法描述:
 
@@ -287,11 +287,11 @@ font-weight:bold;
 | :--- | :--- |
 | break-word | 在长单词或 URL地址内部进行换行 |
 
-* [x] text-overflow属性
+* [x] **text-overflow属性**
 
 * 作用: 用来定义省略文本的处理方式
 
-* 语法: text-overflow:clip\|ellipisis\|string
+* 语法: **`text-overflow:clip|ellipisis|string`**
 
 * 语法描述:
 
@@ -304,11 +304,12 @@ font-weight:bold;
 
 > #### 颜色相关
 
-* [x] RGBA颜色值
+* [x] **RGBA颜色值**
 
 * 作用:它在红、绿、蓝三原色通道的基础上增加了不透明度参数。
 
-* 语法:RGBA\(R,G,B,A\)
+* 语法:**`RGBA(R,G,B,A)`**
+
 * 语法插述: 
 
 | 取值 | 描述 |
@@ -318,11 +319,11 @@ font-weight:bold;
 | B | 蓝色值,0-255 |
 | A | 透明度,0-1之间 |
 
-* [x] HSL颜色值
+* [x] **HSL颜色值**
 
 * 作用: 它通过对色调\(H\)、 他和度\(S\)和亮度\(L\) 3个颜色通道的变化以及它们相互之间的叠加来获得各种颜色 。
 
-* 语法: HSL\(&lt;Hue&gt;,&lt;Saturation&gt;,&lt;Lightness&gt;\)
+* 语法: **`HSL(<Hue>,<Saturation>,<Lightness>)`**
 
 * 语法描述:
 
@@ -331,11 +332,11 @@ font-weight:bold;
 | Saturation | 取值为: 0.0% -100.0%, 0%表示灰色,100%颜色最艳。 |
 | Lightness | 取值为: 0.0%-100.0%,0%最暗,  显示为黑色,100%最亮, 显示为白色 |
 
-* [x] HSLA颜色值
+* [x] **HSLA颜色值**
 
 * 作用: 它通过对色调\(H\)、 他和度\(S\)和亮度\(L\) 3个要素基础上增加了不透明度参数。
 
-* 语法: HSL\(&lt;Hue&gt;,&lt;Saturation&gt;,&lt;Lightness&gt;,&lt;alpha&gt;\)
+* 语法: **`HSL(<Hue>,<Saturation>,<Lightness>,<alpha>)`**
 
 * 语法描述:
 
@@ -466,7 +467,7 @@ font-weight:bold;
 
 ![](/assets/ke3.png)
 
-* [x] 使用颜色值transparent
+* [x] **transparent**
 
 * 作用:相当于使用了值为0的alpha通道,将背景、文字、边框等的颜色设定为完全透明。
 
