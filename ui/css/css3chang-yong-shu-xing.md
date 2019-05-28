@@ -178,6 +178,7 @@ label{
 * 作用:用来定义背景图像的大小
 
 * 语法: background-size:length\|percentage\|cover\|contain
+
 * 语法描述: 
 
 | 值 | 描述 |
@@ -206,7 +207,8 @@ label{
 
 * 作用:用来定义背景图像的裁剪区域
 
-* 语法: backgroud-clip:padding-box\|border-box\|content-box 
+* 语法: backgroud-clip:padding-box\|border-box\|content-box
+
 * 语法描述:
 
 | border-box | 默认值,从边框区域向外裁剪背景 |
@@ -224,7 +226,7 @@ label{
 
 * 当你发现您要使用的字体文件时, 只需简单的将字体文件包含在网站中, 它会自动下载给需要的用户
 
-* 我们要做的就是在@font-face规则中完成对字体的描述。 
+* 我们要做的就是在@font-face规则中完成对字体的描述。
 
 * [**可参考链接**](https://www.cnblogs.com/hellman/p/6773461.html)
 
@@ -244,11 +246,30 @@ font-weight:bold;
 
 **提示:**[**免费字体下载**](https://www.dafont.com/single-malta.font)
 
+```css
+<style>
+    @font-face {
+      font-family: 'Alex';
+      src: url("KK.ttf") format('truetype');
+      font-weight: bold;
+      font-style: italic;
+    }
+    .font-face-display{
+      font:66px Alex
+    }
+  </style>
+<body>
+<div class="font-face-display">Take me to your heart</div>
+</body>
+```
+
+![](/assets/ke4.png)
+
 * [x] **目前主要的几种网络字体**
 
 * TrueType\(.ttf\)格式: 此字体是Windows和Mac的最常见的字体, 是一种RAW格式,  因此他不为网站优化, 支持这种手体的浏览器有\[lE9+,Firefox3.5+,Chrome4+, Safari3+,Opera10+,iOS MobileSafari4.2+\]
 
-* OpenType\(.otf\)格式: .otf字体被认为是一种原始的字体格式, 其内置在TrueType的基础上, 所以也提供了更多的功能,支持这种手体的浏览器有\[Firefox3.5+,Chrome4.0+,Safari3.1+,Opera10.0+, iOS MobileSafari4. 2+\] 
+* OpenType\(.otf\)格式: .otf字体被认为是一种原始的字体格式, 其内置在TrueType的基础上, 所以也提供了更多的功能,支持这种手体的浏览器有\[Firefox3.5+,Chrome4.0+,Safari3.1+,Opera10.0+, iOS MobileSafari4. 2+\]
 
 * Web Open Font Format\(.woff\)格式: woff字体是Web手体中最佳格式, 他是一个开放的TrueType/0penType的压缩版本。支持这种字体的浏览器有\[lE9+, Firefox3.5+, Chrome6+, Safari3. 6+,0pera11.1+\]
 
@@ -260,9 +281,9 @@ font-weight:bold;
 
 * 语法: word-wrap:normal\|break-word
 
-* 语法描述: 
+* 语法描述:
 
-| normal | 只在先许的断字点换行 \(浏览器保持默认处理\)  |
+| normal | 只在先许的断字点换行 \(浏览器保持默认处理\) |
 | :--- | :--- |
 | break-word | 在长单词或 URL地址内部进行换行 |
 
@@ -272,12 +293,12 @@ font-weight:bold;
 
 * 语法: text-overflow:clip\|ellipisis\|string
 
-* 语法描述: 
+* 语法描述:
 
-| aclip  | 修剪文本 |
+| aclip | 修剪文本 |
 | :--- | :--- |
-| ellipsis  | 显示省略持号来代表被修剪的文本 |
-| string  | 使用给定的字符事来代表被修剪的文本\(当前浏览器不支持\)  |
+| ellipsis | 显示省略持号来代表被修剪的文本 |
+| string | 使用给定的字符事来代表被修剪的文本\(当前浏览器不支持\) |
 
 **注意**: 实际上,text-overflow属性仅是内容注解, 表明当文本溢出时是否显示省略标记, 并不具备样式定义的特性。要实现溢出时产生省略号的效果, 我们应该再定义两个样式:强制文本一行内显示\(white-space:nowrap\)和溢出内容为隐藏\(overflow:hidden\)
 
@@ -285,29 +306,30 @@ font-weight:bold;
 
 * [x] RGBA颜色值
 
-* 作用:它在红、绿、蓝三原色通道的基础上增加了不透明度参数。 
+* 作用:它在红、绿、蓝三原色通道的基础上增加了不透明度参数。
+
 * 语法:RGBA\(R,G,B,A\)
 * 语法插述: 
 
-| 取值 |  描述 |
+| 取值 | 描述 |
 | :---: | :---: |
 | R | 红色值,0-255 |
 | G | 绿色值,0-255 |
 | B | 蓝色值,0-255 |
-| A | 透明度,0-1之间 |
+| A | 透明度,0-1之间 |
 
 * [x] HSL颜色值
 
-* 作用: 它通过对色调\(H\)、 他和度\(S\)和亮度\(L\) 3个颜色通道的变化以及它们相互之间的叠加来获得各种颜色 。 
+* 作用: 它通过对色调\(H\)、 他和度\(S\)和亮度\(L\) 3个颜色通道的变化以及它们相互之间的叠加来获得各种颜色 。
 
 * 语法: HSL\(&lt;Hue&gt;,&lt;Saturation&gt;,&lt;Lightness&gt;\)
 
-* 语法描述: 
+* 语法描述:
 
 | Hue | 0\(或360\)表示红色, 120表示绿色, 240表示蓝色,也可取其他数值来指定颜色。取值为: 0-360 |
 | :---: | :--- |
 | Saturation | 取值为: 0.0% -100.0%, 0%表示灰色,100%颜色最艳。 |
-| Lightness  | 取值为: 0.0%-100.0%,0%最暗,  显示为黑色,100%最亮, 显示为白色 |
+| Lightness | 取值为: 0.0%-100.0%,0%最暗,  显示为黑色,100%最亮, 显示为白色 |
 
 * [x] HSLA颜色值
 
@@ -315,13 +337,134 @@ font-weight:bold;
 
 * 语法: HSL\(&lt;Hue&gt;,&lt;Saturation&gt;,&lt;Lightness&gt;,&lt;alpha&gt;\)
 
-* 语法描述: 
+* 语法描述:
 
 | Hue | 0\(或360\)表示红色, 120表示绿色, 240表示蓝色,也可取其他数值来指定颜色。取值为: 0-360 |
 | :---: | :--- |
 | Saturation | 取值为: 0.0% -100.0%, 0%表示灰色,100%颜色最艳。 |
-| Lightness  | 取值为: 0.0%-100.0%,0%最暗,  显示为黑色,100%最亮, 显示为白色 |
+| Lightness | 取值为: 0.0%-100.0%,0%最暗,  显示为黑色,100%最亮, 显示为白色 |
 | alpha | 取值0~1之间 |
+
+```css
+<style>
+    li {
+      list-style-type: none;
+    }
+
+    li.rgba1 {
+      background: rgba(255, 255, 0, 1);
+    }
+
+    li.rgba2 {
+      background: rgba(255, 255, 0, 0.8);
+    }
+
+    li.rgba3 {
+      background: rgba(255, 255, 0, 0.6);
+    }
+
+    li.rgba4 {
+      background: rgba(255, 255, 0, 0.4);
+    }
+
+    li.rgba5 {
+      background: rgba(255, 255, 0, 0.2);
+    }
+
+    li.rgba6 {
+      background: rgba(255, 255, 0, 0);
+    }
+
+    /*HSL*/
+    div.hsl1 {
+      background: hsl(320, 100%, 50%);
+      height: 20px;
+    }
+
+    div.hsl2 {
+      background: hsl(320, 50%, 50%);
+      height: 20px;
+    }
+
+    div.hsl3 {
+      background: hsl(320, 100%, 75%);
+      height: 20px;
+    }
+
+    div.hsl4 {
+      background: hsl(202, 100%, 50%);
+      height: 20px;
+    }
+
+    div.hsl5 {
+      background: hsl(202, 50%, 50%);
+      height: 20px;
+    }
+
+    div.hsl6 {
+      background: hsl(202, 100%, 75%);
+      height: 20px;
+    }
+
+    /*HSLA*/
+    div.hsla1 {
+      background: hsla(320, 100%, 50%, 0.2);
+      height: 20px;
+    }
+
+    div.hsla2 {
+      background: hsla(320, 50%, 50%, 0.4);
+      height: 20px;
+    }
+
+    div.hsla3 {
+      background: hsla(320, 100%, 75%, 0.6);
+      height: 20px;
+    }
+
+    div.hsla4 {
+      background: hsla(202, 100%, 50%, 0.8);
+      height: 20px;
+    }
+
+    div.hsla5 {
+      background: hsla(202, 50%, 50%, 1.0);
+      height: 20px;
+    }
+
+    div.hsla6 {
+      background: hsla(202, 100%, 75%, 0);
+      height: 20px;
+    }
+  </style>
+<body>
+<h3>Css3的RGBA效果</h3>
+<ul>
+  <li class="rgba1">1</li>
+  <li class="rgba2">0.8</li>
+  <li class="rgba3">0.6</li>
+  <li class="rgba4">0.4</li>
+  <li class="rgba5">0.2</li>
+  <li class="rgba6">0</li>
+</ul>
+<h3>Css3的HSL效果</h3>
+<div class="hsl1"></div>
+<div class="hsl2"></div>
+<div class="hsl3"></div>
+<div class="hsl4"></div>
+<div class="hsl5"></div>
+<div class="hsl6"></div>
+<h3>Css3的HSLA效果</h3>
+<div class="hsla1"></div>
+<div class="hsla2"></div>
+<div class="hsla3"></div>
+<div class="hsla4"></div>
+<div class="hsla5"></div>
+<div class="hsla6"></div>
+</body>
+```
+
+![](/assets/ke3.png)
 
 * [x] 使用颜色值transparent
 
@@ -334,16 +477,8 @@ color:transparent;
 border:1px solid transparent;
 background:transparent;
 }
-</style> 
+</style>
 ```
-
-
-
-
-
-
-
-
 
 
 
