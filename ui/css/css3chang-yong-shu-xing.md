@@ -4,7 +4,7 @@
 
 * 作用: 可以设置一个或多个下拉阴影的框。
 
-* 语法: **`box-shadow:h-shadow  v-shadow   blur  spread  color`**
+* 语法: `box-shadow:h-shadow  v-shadow   blur  spread  color`
 
 * 语法描述:
 
@@ -74,7 +74,7 @@ label{
 
 * 作用: 这个属性允许你为元素添加圆角边框。
 
-* 语法: **`border-radius:none|<length>{1,4}[/<length>{1,4}]`**
+* 语法: `border-radius:none|<length>{1,4}[/<length>{1,4}]`
 
 * 语法描述:
 
@@ -82,7 +82,7 @@ label{
 | :---: | :--- |
 
 
-* ** 注意：每个半径的四个值的顺序是：左上角，右上角，右下角，左下角**
+* **注意:每个半径的四个值的顺序是：左上角，右上角，右下角，左下角**
 
 ```css
   <style>
@@ -135,7 +135,7 @@ label{
 
 * 作用: 这个属性允许你为元素添加边框背景。
 
-* 语法: **`border-image:source slice width outset  repeat`**
+* 语法: `border-image:source slice width outset  repeat`
 
 * 语法插述:
 
@@ -177,7 +177,7 @@ label{
 
 * 作用:用来定义背景图像的大小
 
-* 语法: **`background-size:length|percentage|cover|contain`**
+* 语法: `background-size:length|percentage|cover|contain`
 
 * 语法描述:
 
@@ -192,7 +192,7 @@ label{
 
 * 作用:用来定义背景图像的定位区域
 
-* 语法:**` background-origin:padding-box|border-box|content-box`**
+* 语法:`background-origin:padding-box|border-box|content-box`
 
 * 语法描述:
 
@@ -207,7 +207,7 @@ label{
 
 * 作用:用来定义背景图像的裁剪区域
 
-* 语法: **`backgroud-clip:padding-box|border-box|content-box`**
+* 语法: `backgroud-clip:padding-box|border-box|content-box`
 
 * 语法描述:
 
@@ -279,7 +279,7 @@ font-weight:bold;
 
 * 作用: 用来定义文本超过指定容器的边界时是否断开转行
 
-* 语法: **`word-wrap:normal|break-word`**
+* 语法: `word-wrap:normal|break-word`
 
 * 语法描述:
 
@@ -291,7 +291,7 @@ font-weight:bold;
 
 * 作用: 用来定义省略文本的处理方式
 
-* 语法: **`text-overflow:clip|ellipisis|string`**
+* 语法: `text-overflow:clip|ellipisis|string`
 
 * 语法描述:
 
@@ -308,9 +308,9 @@ font-weight:bold;
 
 * 作用:它在红、绿、蓝三原色通道的基础上增加了不透明度参数。
 
-* 语法:**`RGBA(R,G,B,A)`**
+* 语法:`RGBA(R,G,B,A)`
 
-* 语法插述: 
+* 语法插述:
 
 | 取值 | 描述 |
 | :---: | :---: |
@@ -323,7 +323,7 @@ font-weight:bold;
 
 * 作用: 它通过对色调\(H\)、 他和度\(S\)和亮度\(L\) 3个颜色通道的变化以及它们相互之间的叠加来获得各种颜色 。
 
-* 语法: **`HSL(<Hue>,<Saturation>,<Lightness>)`**
+* 语法: `HSL(<Hue>,<Saturation>,<Lightness>)`
 
 * 语法描述:
 
@@ -336,7 +336,7 @@ font-weight:bold;
 
 * 作用: 它通过对色调\(H\)、 他和度\(S\)和亮度\(L\) 3个要素基础上增加了不透明度参数。
 
-* 语法: **`HSL(<Hue>,<Saturation>,<Lightness>,<alpha>)`**
+* 语法: `HSL(<Hue>,<Saturation>,<Lightness>,<alpha>)`
 
 * 语法描述:
 
