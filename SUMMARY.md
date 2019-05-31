@@ -26,6 +26,7 @@
     * [Java对日期Date相应处理](chapter1/tools/javadui-ri-qi-date-xiang-ying-chu-li.md)
     * [Java类型的转换](chapter1/tools/lei-xing-de-zhuan-huan.md)
     * [Java生成一定规则递增编号](chapter1/tools/javasheng-cheng-yi-ding-gui-ze-di-zeng-bian-hao.md)
+    * [去除字符串中的空格](chapter1/tools/qu-chu-zi-fu-chuan-zhong-de-kong-ge.md)
   * [Jpa](chapter1/jpa.md)
     * [Jpa多表原生sql自定义字段条件查询并进行分页和排序](chapter1/jpa/jpaduo-biao-yuan-sheng-sql-zi-ding-yi-zi-duan-tiao-jian-cha-xun-bing-jin-xing-fen-ye-he-pai-xu.md)
     * [调用存储过程](chapter1/jpa/diao-yong-cun-chu-guo-cheng.md)

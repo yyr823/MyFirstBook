@@ -35,7 +35,7 @@ SELECT * FROM table_name WHERE TO_DAYS(create_time) =TO_DAYS(NOW());
 SELECT TIMESTAMPDIFF(YEAR/MONTH/DAY,'2003-02-01','2003-05-01');
 ```
 
-*  TIMESTAMPDIFF\(interval,datetime\_expr1,datetime\_expr2\) 
+* TIMESTAMPDIFF\(interval,datetime\_expr1,datetime\_expr2\) 
 
 返回日期或日期时间表达式datetime\_expr1 和datetime\_expr2the 之间的整数差\(注意日期大小不可颠倒\)
 
