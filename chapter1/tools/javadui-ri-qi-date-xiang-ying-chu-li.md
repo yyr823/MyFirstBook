@@ -12,6 +12,18 @@ import java.util.Date;
 
 public class DateFormat {
 
+JAVA获取当前时间的前一天或者前几天时间
+SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Date date=new Date();
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+		calendar.add(Calendar.DAY_OF_MONTH, -1);
+		date = calendar.getTime();
+		System.out.println(sdf.format(date));
+
+
+
+
 /**
      * 补充:功能描述：时间相减得到天数
      * @param beginDateStr
