@@ -1,7 +1,6 @@
 ### MySQL 字符串函数：字符串截取
 
 * #### [原文链接](https://www.cnblogs.com/duanc/archive/2018/04/09/8760372.html)
-
 * left\(name,4\)截取左边的4个字符
 
 ```Sql
@@ -26,19 +25,19 @@ SELECT SUBSTRING('成都融资事业部',5,3)  -- 事业部
 SELECT SUBSTRING('成都融资事业部',3) -- 融资事业部
 ```
 
-* SUBSTRING\(name, -4\) 截取name这个字段的第 4 个字符位置（倒数）开始取，直到结束
+* SUBSTRING\(name, -4\) 截取name这个字段的第 4 个字符位置（倒数）开始取，直到结束
 
 ```Sql
 SELECT SUBSTRING('成都融资事业部',-4) -- 资事业部
 ```
 
-* SUBSTRING\(name, -4，2\) 截取name这个字段的第 4 个字符位置（倒数）开始取，只截取之后的2个字符
+* SUBSTRING\(name, -4，2\) 截取name这个字段的第 4 个字符位置（倒数）开始取，只截取之后的2个字符
 
 ```Sql
 SELECT SUBSTRING('成都融资事业部',-4,2) -- 资事
 ```
 
-**注意:我们注意到在函数 `substring(str,pos, len)`中,pos 可以是负值,但 len 不能取负值。**
+**注意:我们注意到在函数 **`substring(str,pos, len)`**中,pos 可以是负值,但 len 不能取负值。**
 
 * substring\_index\('www.baidu.com', '.', 2\) 截取第二个 '.' 之前的所有字符
 
