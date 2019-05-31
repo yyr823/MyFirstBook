@@ -9,7 +9,7 @@
 00:00:00
 </span>
 
-<!-- js -->
+<!-- jquery -->
 
 <script type="text/javascript">
 
