@@ -33,7 +33,7 @@ public class MyTable implements Serializable {
 }
 ```
 
-**关键要点:    
+**关键要点:      
 **存储过程使用了注释`@NamedStoredProcedureQuery`并绑定到一个JPA表。`procedureName`是存储过程的名字  
 `name`是JPA中的存储过程的名字  
 使用注释`@StoredProcedureParameter`来定义存储过程使用的IN/OUT参数
@@ -79,7 +79,7 @@ List<Map<String, Object>>  showOrderMoney( String begin, String end,  String sno
 
 **需注意:该存储过程本身主要针对的是select返回数据,即调用存储过程之后本身就有结果,所有与out参数无关.**
 
-* [x] **定义自定义的Repository来调用存储过程    
+* [x] **定义自定义的Repository来调用存储过程  
   **
 
 * 定义自定义的Repository:
