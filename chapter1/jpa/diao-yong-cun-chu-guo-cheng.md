@@ -12,12 +12,9 @@ call PROCEDURE in_and_out_test (inParam1 IN VARCHAR, outParam1 OUT VARCHAR);
 
 这里有两个存储过程：
 
-* [x] in\_only\_test
-  ```
-  它需要一个输入参数inParam1,但不返回值
-  ```
-* [x] in\_and\_out\_test  
-  它需要一个输入参数inParam1,且返回值outParam1
+* [x] in\_only\_test           它需要一个输入参数inParam1,但不返回值
+
+* [x] in\_and\_out\_test    它需要一个输入参数inParam1,且返回值outParam1
 
 * JPA方面
 
@@ -36,10 +33,10 @@ public class MyTable implements Serializable {
 }
 ```
 
-**关键要点：  
+**关键要点:    
 **存储过程使用了注释`@NamedStoredProcedureQuery`并绑定到一个JPA表。`procedureName`是存储过程的名字  
-,`name`是JPA中的存储过程的名字  
-,使用注释`@StoredProcedureParameter`来定义存储过程使用的IN/OUT参数
+`name`是JPA中的存储过程的名字  
+使用注释`@StoredProcedureParameter`来定义存储过程使用的IN/OUT参数
 
 * MyTableRepository仓库调用存储过程
 
@@ -54,13 +51,11 @@ public interface MyTableRepository extends CrudRepository<MyTable, Long> {
 
 **关键要点:**
 
-* [x] **@Procedure的name参数必须匹配@NamedStoredProcedureQuery的name  
-  **
+* [x] **@Procedure的name参数必须匹配@NamedStoredProcedureQuery的name**
 
 * [x] **@Param必须匹配@StoredProcedureParameter注释的name参数**
 
-* [x] **返回类型必须匹配:in\_only\_test存储过程返回是void,in\_and\_out\_test存储过程必须返回String  
-  .**
+* [x] **返回类型必须匹配:in\_only\_test存储过程返回是void,in\_and\_out\_test存储过程必须返回String**
 
 * **调用**
 
@@ -73,10 +68,7 @@ Assert.assertEquals(outParam, "Woohoo Im an outparam, and this is my inparam Hi 
 myTableRepository.inOnlyTest(inParam);
 ```
 
-* #### \*\*其它技巧
-
-  \*\*
-
+* #### 其它技巧
 * [x] **原生sql查询**
 
 ```java
@@ -87,7 +79,7 @@ List<Map<String, Object>>  showOrderMoney( String begin, String end,  String sno
 
 **需注意:该存储过程本身主要针对的是select返回数据,即调用存储过程之后本身就有结果,所有与out参数无关.**
 
-* [x] **定义自定义的Repository来调用存储过程  
+* [x] **定义自定义的Repository来调用存储过程    
   **
 
 * 定义自定义的Repository:
