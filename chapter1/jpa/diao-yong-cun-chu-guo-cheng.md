@@ -33,7 +33,7 @@ public class MyTable implements Serializable {
 }
 ```
 
-**关键要点:**存储过程使用了注释`@NamedStoredProcedureQuery`并绑定到一个JPA表。`procedureName`是存储过程的名字  
+**关键要点**:存储过程使用了注释`@NamedStoredProcedureQuery`并绑定到一个JPA表。`procedureName`是存储过程的名字  
 `name`是JPA中的存储过程的名字。使用注释`@StoredProcedureParameter`来定义存储过程使用的IN/OUT参数
 
 * MyTableRepository仓库调用存储过程
