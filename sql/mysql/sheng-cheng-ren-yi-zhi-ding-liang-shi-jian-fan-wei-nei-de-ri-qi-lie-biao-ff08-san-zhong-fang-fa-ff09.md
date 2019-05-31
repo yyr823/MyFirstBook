@@ -83,3 +83,14 @@ call create_nums(50000);
 
 ![](/assets/sq2.png)
 
+> #### oracle 求两个日期之间的所有日期
+
+```Sql
+SELECT TO_CHAR((TO_DATE('2019-05-28', 'yyyy-MM-dd') + (ROWNUM - 1)), 'yyyy-MM-dd') DT
+  FROM DUAL
+CONNECT BY ROWNUM <=
+           (TO_DATE('2019-05-31', 'yyyy-MM-dd') - TO_DATE('2019-05-28', 'yyyy-MM-dd') + 1);
+```
+
+
+
