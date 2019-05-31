@@ -1,37 +1,36 @@
 ### Select的文本,值获取/设置/删除/清空
 
 * #### [原文链接](https://www.cnblogs.com/zonglonglong/p/6274971.html)
-
-* ####  获取select 
+* #### 获取select
 
 ```js
 //获取select 选中的 text :
     $("#ddlregtype").find("option:selected").text();
 
 //获取select选中的 value:
-    $("#ddlregtype ").val();
+    $("#ddlregtype").val();
 
 //获取select选中的索引:
-    $("#ddlregtype ").get(0).selectedindex;
+    $("#ddlregtype").get(0).selectedindex;
 ```
 
-* ####  设置select
+* #### 设置select
 
 ```js
 //设置select选中的索引：
-    $("#ddlregtype ").get(0).selectedindex=index;//index为索引值
+    $("#ddlregtype").get(0).selectedindex=index;//index为索引值
 
 //设置select 选中的value：
-    $("#ddlregtype ").attr("value","normal“);
-    $("#ddlregtype ").val("normal");
-    $("#ddlregtype ").get(0).value = value;
+    $("#ddlregtype").attr("value","normal“);
+    $("#ddlregtype").val("normal");
+    $("#ddlregtype").get(0).value = value;
 
 //设置select 选中的text:
     var count=$("#ddlregtype option").length;
       for(var i=0;i<count;i++)
-         {   if($("#ddlregtype ").get(0).options[i].text == text)
+         {   if($("#ddlregtype").get(0).options[i].text == text)
             {
-                $("#ddlregtype ").get(0).options[i].selected = true;
+                $("#ddlregtype").get(0).options[i].selected = true;
                 break;
             }
         }
@@ -50,7 +49,7 @@ $("#select_id option:last").remove(); //删除索引值最大的option
 $("#select_id option[index='0']").remove();//删除索引值为0的option
 $("#select_id option[value='3']").remove(); //删除值为3的option
 $("#select_id option[text='4']").remove(); //删除text值为4的option
-$("#ddlregtype ").empty();//清空
+$("#ddlregtype").empty();//清空
 ```
 
 
