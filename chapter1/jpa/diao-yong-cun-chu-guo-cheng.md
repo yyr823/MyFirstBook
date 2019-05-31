@@ -77,7 +77,7 @@ List<Map<String, Object>>  showOrderMoney( String begin, String end,  String sno
 
 **需注意:该存储过程本身主要针对的是select返回数据,即调用存储过程之后本身就有结果,所有与out参数无关.**
 
-* [x] **定义自定义的Repository来调用存储过程  **
+* [x] **定义自定义的Repository来调用存储过程**
 
 * 定义自定义的Repository:
 
