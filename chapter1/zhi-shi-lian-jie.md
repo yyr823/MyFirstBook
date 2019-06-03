@@ -12,6 +12,7 @@
 | [面试视频指导+简历+面试题](https://pan.baidu.com/share/init?surl=DwOwJiJNo-daxb8SLkvIiQ) | wu61 |
 | [java基础知识](https://pan.baidu.com/s/1Wsvvk1miNbbd7ryahiTbjg ) | 1rw6 |
 | [java项目学习](https://pan.baidu.com/s/1kHIrkSWmS56Aj3R49ID2Hg) | kng2 |
+| [Shiro开发框架视频课程\(采用Eclipse + Maven进行开发\)](https://pan.baidu.com/s/1qZi1II4) | 0t59 |
 
 
 
