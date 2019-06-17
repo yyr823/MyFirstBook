@@ -2,7 +2,8 @@
 
 * ##### [OSI七层模型与TCP/IP五层模型](https://www.cnblogs.com/qishui/p/5428938.html)
 * ##### [TCP/IP教程](https://www.runoob.com/tcpip/tcpip-tutorial.html)
-* ##### 大致内容：OSI参考模型 、PDU、对等通信、TCP/IP 、协议族
+
+##### PS:大致内容：OSI参考模型 、PDU、对等通信、TCP/IP 、协议族
 
 > #### OSI参考模型
 
