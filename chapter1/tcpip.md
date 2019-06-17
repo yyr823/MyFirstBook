@@ -17,9 +17,7 @@
 
 #### [协议数据单元](https://baike.baidu.com/item/协议数据单元/8226389)PDU
 
-\(Protocol Data Unit\)是指对等[层次](https://baike.baidu.com/item/层次/424052)之间传递的数据单位。 协议数据单元\(Protocol Data Unit \)物理层的 PDU是
-
-[数据位](https://baike.baidu.com/item/数据位/3441892)\(bit\),[数据链路层](https://baike.baidu.com/item/数据链路层/4329290)的 PDU是[数据帧](https://baike.baidu.com/item/数据帧/10571824)\(frame\),网络层的PDU是[数据包](https://baike.baidu.com/item/数据包/489739)\(packet\),[传输层](https://baike.baidu.com/item/传输层/4329536)的 PDU是[数据段](https://baike.baidu.com/item/数据段/5136260)\(segment\)其他更高层次的PDU是报文\(message\)。
+\(Protocol Data Unit\)是指对等[层次](https://baike.baidu.com/item/层次/424052)之间传递的数据单位。 协议数据单元\(Protocol Data Unit \)物理层的 PDU是[数据位](https://baike.baidu.com/item/数据位/3441892)\(bit\),[数据链路层](https://baike.baidu.com/item/数据链路层/4329290)的 PDU是[数据帧](https://baike.baidu.com/item/数据帧/10571824)\(frame\),网络层的PDU是[数据包](https://baike.baidu.com/item/数据包/489739)\(packet\),[传输层](https://baike.baidu.com/item/传输层/4329536)的 PDU是[数据段](https://baike.baidu.com/item/数据段/5136260)\(segment\)其他更高层次的PDU是报文\(message\)
 
 > **Q：什么时候有PDU？**
 >
