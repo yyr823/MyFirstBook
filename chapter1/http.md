@@ -188,17 +188,15 @@ HTTP状态码由三个十进制数字组成,第一个十进制数字定义了状
 | 504 | Gateway Time-out | 充当网关或代理的服务器,未及时从远端服务器获取请求 |
 | 505 | HTTP Version not supported | 服务器不支持请求的HTTP协议的版本,无法完成处理 |
 
-# HTTP content-type
+> #### HTTP content-type
 
-Content-Type，内容类型，一般是指网页中存在的Content-Type，用于定义网络文件的类型和网页的编码，决定浏览器将以什么形式、什么编码读取这个文件，这就是经常看到一些Asp网页点击的结果却是下载到的一个文件或一张图片的原因。
+**Content-Type,内容类型,一般是指网页中存在的Content-Type,用于定义网络文件的类型和网页的编码,决定浏览器将以什么形式、什么编码读取这个文件,这就是经常看到一些Asp网页点击的结果却是下载到的一个文件或一张图片的原因。**
 
----
-
-## HTTP content-type 对照表
+**`HTTP content-type 对照表`**
 
 | 文件扩展名 | Content-Type\(Mime-Type\) | 文件扩展名 | Content-Type\(Mime-Type\) |
-| :--- | :--- | :--- | :--- |
-| .\*（ 二进制流，不知道下载文件类型） | application/octet-stream | .tif | image/tiff |
+| :---: | :---: | :---: | :---: |
+| .\*\(二进制流,不知道下载文件类型\) | application/octet-stream | .tif | image/tiff |
 | .001 | application/x-001 | .301 | application/x-301 |
 | .323 | text/h323 | .906 | application/x-906 |
 | .907 | drawing/907 | .a11 | application/x-a11 |
