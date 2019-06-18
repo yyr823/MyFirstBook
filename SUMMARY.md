@@ -95,5 +95,6 @@
     * [You have not concluded your merge \(MERGE\_HEAD exists\)](gitgithub/exception/you-have-not-concluded-your-merge-mergehead-exists.md)
     * [remote: Incorrect username or password \( access token \)](gitgithub/exception/remote-incorrect-username-or-password-access-token.md)
   * [git push origin与git push -u origin master的区别](gitgithub/git-push-originyu-git-push-u-origin-master-de-qu-bie.md)
+  * [使用eclipse提交到GitHub](gitgithub/shi-yong-eclipse-ti-jiao-dao-github.md)
 * [GitBook](gitbook.md)
 
