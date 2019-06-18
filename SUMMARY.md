@@ -32,6 +32,7 @@
     * [调用存储过程](chapter1/jpa/diao-yong-cun-chu-guo-cheng.md)
   * [知识链接](chapter1/zhi-shi-lian-jie.md)
   * [TCP/IP](chapter1/tcpip.md)
+  * [HTTP](chapter1/http.md)
 * [SQL](sql.md)
   * [Mysql](sql/mysql.md)
     * [GROUP\_CONCAT函数](sql/mysql/groupconcat.md)
