@@ -21,9 +21,9 @@
 
 **HTTP三点注意事项：**
 
-* **`HTTP是无连接:`**无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求,并收到客户的应答后,即断开连接。采用这种方式可以节省传输时间。
-* **`HTTP是媒体独立的:`**这意味着,只要客户端和服务器知道如何处理的数据内容,任何类型的数据都可以通过HTTP发送。客户端以及服务器指定使用适合的MIME-type内容类型。
-* **`HTTP是无状态:`**HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息,则它必须重传。这样可能导致每次连接传送的数据量增大。另一方面,在服务器不需要先前信息时它的应答就较快。
+* `HTTP是无连接:`无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求,并收到客户的应答后,即断开连接。采用这种方式可以节省传输时间。
+* `HTTP是媒体独立的:`这意味着,只要客户端和服务器知道如何处理的数据内容,任何类型的数据都可以通过HTTP发送。客户端以及服务器指定使用适合的MIME-type内容类型。
+* `HTTP是无状态:`HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息,则它必须重传。这样可能导致每次连接传送的数据量增大。另一方面,在服务器不需要先前信息时它的应答就较快。
 
 **以下图表展示了HTTP协议通信流程:**
 
@@ -121,7 +121,7 @@ HTTP响应头信息如下:
 | Expires | 应该在什么时候认为文档已经过期,从而不再缓存它 |
 | Last-Modified | 文档的最后改动时间。客户可以通过If-Modified-Since请求头提供一个日期，该请求将被视为一个条件GET,只有改动时间迟于指定时间的文档才会返回,否则返回一个304（Not Modified）状态。Last-Modified也可用setDateHeader方法来设置 |
 | Location | 表示客户应当到哪里去提取文档。Location通常不是直接设置的,而是通过HttpServletResponse的sendRedirect方法,该方法同时设置状态代码为302 |
-| Refresh | 表示浏览器应该在多少时间之后刷新文档,以秒计。除了刷新当前文档之外,你还可以通过setHeader\("Refresh", "5; URL=http://host/path"\)让浏览器读取指定的页面。注意这种功能通常是通过设置HTML页面HEAD区的＜META HTTP-EQUIV="Refresh" CONTENT="5;URL=http://host/path"＞实现，这是因为，自动刷新或重定向对于那些不能使用CGI或Servlet的HTML编写者十分重要。但是,对于Servlet来说，直接设置Refresh头更加方便。注意Refresh的意义是"N秒之后刷新本页面或访问指定页面",而不是"每隔N秒刷新本页面或访问指定页面"。因此,连续刷新要求每次都发送一个Refresh头,而发送204状态代码则可以阻止浏览器继续刷新,不管是使用Refresh头还是＜META HTTP-EQUIV="Refresh" ...＞。注意Refresh头不属于HTTP 1.1正式规范的一部分,而是一个扩展,但Netscape和IE都支持它 |
+| Refresh | 表示浏览器应该在多少时间之后刷新文档,以秒计。除了刷新当前文档之外,你还可以通过setHeader\("Refresh", "5; URL=[http://host/path"\)让浏览器读取指定的页面。注意这种功能通常是通过设置HTML页面HEAD区的＜META](http://host/path"%29让浏览器读取指定的页面。注意这种功能通常是通过设置HTML页面HEAD区的＜META) HTTP-EQUIV="Refresh" CONTENT="5;URL=[http://host/path"＞实现，这是因为，自动刷新或重定向对于那些不能使用CGI或Servlet的HTML编写者十分重要。但是,对于Servlet来说，直接设置Refresh头更加方便。注意Refresh的意义是"N秒之后刷新本页面或访问指定页面",而不是"每隔N秒刷新本页面或访问指定页面"。因此,连续刷新要求每次都发送一个Refresh头,而发送204状态代码则可以阻止浏览器继续刷新,不管是使用Refresh头还是＜META](http://host/path"＞实现，这是因为，自动刷新或重定向对于那些不能使用CGI或Servlet的HTML编写者十分重要。但是,对于Servlet来说，直接设置Refresh头更加方便。注意Refresh的意义是"N秒之后刷新本页面或访问指定页面",而不是"每隔N秒刷新本页面或访问指定页面"。因此,连续刷新要求每次都发送一个Refresh头,而发送204状态代码则可以阻止浏览器继续刷新,不管是使用Refresh头还是＜META) HTTP-EQUIV="Refresh" ...＞。注意Refresh头不属于HTTP 1.1正式规范的一部分,而是一个扩展,但Netscape和IE都支持它 |
 | Server | 服务器名字。Servlet一般不设置这个值,而是由Web服务器自己设置 |
 | Set-Cookie | 设置和页面关联的Cookie。Servlet不应使用response.setHeader\("Set-Cookie", ...\),而是应使用HttpServletResponse提供的专用方法addCookie |
 | WWW-Authenticate | 客户应该在Authorization头中提供什么类型的授权信息。在包含401\(Unauthorized\)状态行的应答中这个头是必需的。例如,response.setHeader\("WWW-Authenticate", "BASIC realm=＼"executives＼""\)。注意Servlet一般不进行这方面的处理,而是让Web服务器的专门机制来控制受密码保护页面的访问\(例如.htaccess\) |
