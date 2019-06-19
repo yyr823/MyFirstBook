@@ -1,7 +1,6 @@
 > #### 原文链接
 
 * #### [小白使用eclipse提交到GitHub \(详细步骤\)](https://blog.csdn.net/bendanany/article/details/78891804)
-
 * [x] 首先登陆GITHub创建一个新的repository \(Start a project\),复制地址备用。`https://github.com/xxxx/TestDemo.git`
 
 **注意,红色标识部分不要勾选,否则后续提交代码时会出现冲突。**
@@ -10,9 +9,9 @@
 
 * [x] Eclipse:
 
-Eclipse 高级版本自带Git,不需要安装插件.\(如使用低级版本,请自己百度安装Git插件\)
+Eclipse 高级版本自带Git,不需要安装插件。\(如使用低级版本,请自己百度安装Git插件\)
 
-将本地项目上传到Git,**流程：需要先通过Commit 传到本地仓库，然后再从本地仓库push到Git。**
+将本地项目上传到Git,**流程：需要先通过Commit 传到本地仓库,然后再从本地仓库push到Git。**
 
 * [x] 实例：
 
@@ -40,9 +39,7 @@ Eclipse 高级版本自带Git,不需要安装插件.\(如使用低级版本,请�
 
 注意,代码只需要提交图片中标识的文件即可。也可以通过编辑.gitignore将不需要提交的文件筛除。
 
-例如，
-
-使用Notepad输入需要忽略的文件或文件名,如下所示：
+例如:使用Notepad输入需要忽略的文件或文件名,如下所示：
 
 \#\#ignore this file\#\#
 
@@ -54,17 +51,17 @@ Eclipse 高级版本自带Git,不需要安装插件.\(如使用低级版本,请�
 
 .settings
 
-这时,可以看到文件带有圆柱形标志。
+commit后, 这时,可以看到文件带有圆柱形标志。
 
 ![](/assets/k10.png)
 
 * 从本地代码提交到Git
 
-项目右键,Team-&gt;Remote-&gt;Push, 输入Git地址，以及登陆凭证
+项目右键,Team-&gt;Remote-&gt;Push, 输入Git地址,以及登陆凭证
 
 ![](/assets/g8.png)
 
-点击Next,Source ref和Destination ref下拉框中选择master，点击Add Spec,点击Next。
+点击Next,Source ref和Destination ref下拉框中选择master,点击Add Spec,点击Next。
 
 ![](/assets/g9t.png)
 
