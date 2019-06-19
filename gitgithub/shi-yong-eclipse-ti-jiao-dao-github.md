@@ -3,6 +3,7 @@
 * #### [小白使用eclipse提交到GitHub \(详细步骤\)](https://blog.csdn.net/bendanany/article/details/78891804)
 * #### [Eclipse生成SSH传输密钥并实现GitHub的SSH代码提交](https://blog.csdn.net/u014745069/article/details/79839202)\(部分参考\)
 * #### [Eclipse使用egit插件通过ssh协议方式上传代码到gitLab](http://www.manongjc.com/article/32398.html)\(部分参考\)
+* #### 大致内容：eclipse使用https、ssh上传代码至github
 * [x] 首先登陆GitHub创建一个新的repository \(Start a project\),复制地址备用。
 
 **注意,红色标识部分不要勾选,否则后续提交代码时会出现冲突。**
