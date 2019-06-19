@@ -97,4 +97,5 @@
   * [git push origin与git push -u origin master的区别](gitgithub/git-push-originyu-git-push-u-origin-master-de-qu-bie.md)
   * [使用eclipse提交到GitHub](gitgithub/shi-yong-eclipse-ti-jiao-dao-github.md)
 * [GitBook](gitbook.md)
+* [电脑小技巧](dian-nao-xiao-ji-qiao.md)
 
