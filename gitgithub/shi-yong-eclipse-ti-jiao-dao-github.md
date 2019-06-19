@@ -13,6 +13,8 @@ Eclipse 高级版本自带Git,不需要安装插件。\(如使用低级版本,�
 
 将本地项目上传到Git,**流程：需要先通过Commit 传到本地仓库,然后再从本地仓库push到Git。**
 
+以http协议方式上传项目代码
+
 * [x] 实例：
 
 * 项目右键,Team -&gt; Share Project
