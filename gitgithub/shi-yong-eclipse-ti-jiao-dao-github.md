@@ -3,7 +3,7 @@
 * #### [小白使用eclipse提交到GitHub \(详细步骤\)](https://blog.csdn.net/bendanany/article/details/78891804)
 * #### [Eclipse生成SSH传输密钥并实现GitHub的SSH代码提交](https://blog.csdn.net/u014745069/article/details/79839202)\(部分参考\)
 * #### [Eclipse使用egit插件通过ssh协议方式上传代码到gitLab](http://www.manongjc.com/article/32398.html)\(部分参考\)
-* [x] 首先登陆GITHub创建一个新的repository \(Start a project\),复制地址备用。
+* [x] 首先登陆GitHub创建一个新的repository \(Start a project\),复制地址备用。
 
 **注意,红色标识部分不要勾选,否则后续提交代码时会出现冲突。**
 
@@ -75,16 +75,16 @@ commit后, 这时,可以看到文件带有圆柱形标志。
 
 * [x] 生成了看上去满意的密钥后,填写Comment简要注释,填写Passphrase\(可选填项,相当于password,用于加密保护私钥,填写后每次上传服务器,将要求提供此密码验证私钥的使用权\),点击SavePrivateKey。
 
-  
 ![](/assets/k12.png)如果之前已经生成文件,可重新定义文件位置或者进行覆盖。其中,id\_rsa代表非对称加密算法rsa的私钥,id\_rsa.pub代表公钥,私钥是需要自己保管的,而公钥可以任意发送给他人保管,这是为了让remote用户能够判断传输的加密数据是否为本人操作。
 
 ![](/assets/k13.png)
 
-* [x] 【**关键步骤**】点击 Export Via SFTP ,按 user@host\[:port\] 形式输入公钥绑定的服务器域,如 git@bitbucket.org 或 git@github.com \(输入刚才的Passphrase,点击各种确定,ps:我绑定时没出现,如果报出 Failed to export ssh key to remote server 的错误,直接忽略\)**注意:push的时候报出 The authenticity of host 'github.org' can't be established. 之类的错误,阻止上传,基本都是没执行这一步的原因。**
+* [x] 【**关键步骤**】点击 Export Via SFTP ,按 user@host\[:port\] 形式输入公钥绑定的服务器域,如 git@bitbucket.org 或 git@github.com \(输入刚才的Passphrase,点击各种确定,ps:我绑定时没出现,如果报出 Failed to export ssh key to remote server 的错误,直接忽略\)**注意:push的时候报出 The authenticity of host 'github.org' can't be established. 之类的错误,阻止上传,基本都是没执行这一步的原因。**
 
 * [x] 点击 Load Existing Key,选择刚才生成的私钥\(id\_rsa文件\),输入Passphrase,点击Apply。
 
 * [x] 点击旁边的Known Hosts,应该能看到刚才绑定的服务器记录。
+
 * [x] 返回General,确认Private keys中包含了刚才保存的私钥件id\_rsa,**没包含的话点击旁边的Add Private Key..添加进去**,最后点击Apply\(SSH2 home位置,用于存储SSH协议使用的非对称加密密钥文件\)
 
 ![](/assets/k11.png)
@@ -93,7 +93,7 @@ commit后, 这时,可以看到文件带有圆柱形标志。
 
 * [x] 把生成的公钥\(刚才生成密钥的时候显示的那一串东西或者打开刚才生成的id\_rsa.pub文件将里面的内容全部复制下来\)绑定到git服务器上。
 
-1. [x] 添加GitHub公钥
+* [x] 添加GitHub公钥
 
 ![](/assets/k14.png)
 
@@ -106,6 +106,4 @@ commit后, 这时,可以看到文件带有圆柱形标志。
 * [x] elipse代码提交如上,只需更改路径,其余跟https提交代码一致,不需要再输入密码。
 
 ![](/assets/k18.png)
-
-
 
