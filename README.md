@@ -6,8 +6,8 @@
 
 > ### 文章分类
 
-| 1.[JAVA](/chapter1.md) | 2.[SQL](/sql.md) | 3.[UI](/ui.md) | 4.[Git/Github](/gitgithub.md) | 5.[GitBook](/gitbook.md) |
-| :--- | :--- | :--- | :--- | :--- |
+| 1.[JAVA](/chapter1.md) | 2.[SQL](/sql.md) | 3.[UI](/ui.md) | 4.[Git/Github](/gitgithub.md) | 5.[GitBook](/gitbook.md) | 6.[**电脑小技巧**](/dian-nao-xiao-ji-qiao.md) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 
 
 
