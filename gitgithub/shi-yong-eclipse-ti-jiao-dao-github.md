@@ -9,7 +9,7 @@
 
 ![](/assets/g1.png)
 
-* [x] Eclipse:**项目名称必须与git中一致**
+* [x] Eclipse:**项目名称必须与gitHub中一致**
 
 Eclipse 高级版本自带Git,不需要安装插件。\(如使用低级版本,请自己百度安装Git插件\)
 
