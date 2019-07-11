@@ -2,7 +2,7 @@
 
 #### **参考文章:**
 
-* #### [编码,解码,乱码,问题详解](https://blog.csdn.net/Marksinoberg/article/details/52254401)
+* #### [编码,解码,乱码,问题详解](https://blog.csdn.net/Marksinoberg/article/details/52254401)\(详情点击\)
 * #### [服务器中的编码解码问题](https://blog.csdn.net/qwe5810658/article/details/80297383)
 
 > #### **编码和解码是什么**
@@ -36,7 +36,7 @@ tomcat服务器默认使用的是ISO-8859-1的编码表,因此当服务器接收
 
 因此就会出现我们常见的情况:ISO-8859-1与utf-8都是兼容ASCII码,因此从浏览器发送到服务器中属于ASCII码的内容是不会乱码,因为他们编解码都是按照ASCII码;
 
-4.汉字会出现乱码的原因: 
+4.汉字会出现乱码的原因:
 
 ISO-8859-1不支持汉字,即使是GBK这种支持汉字的通过他们编码再使用utf-8编码也是会出现乱码,因为ISO-8859-1不支持汉字,没有汉字对应的编码表,GBK中同一个汉字对应的01代码与utf-8对应的01代码不一致,因为他们单个字符的占的字节数是不同的。
 
@@ -50,7 +50,7 @@ ISO-8859-1不支持汉字,即使是GBK这种支持汉字的通过他们编码再
 
 * [x] **数据库**
 
-**修改字符集设置\(MySql\)**:可以先输入查询语句SHOW VARIABLES LIKE ‘character\_set\_%’;查看所有的编码是否是UTF-8. 
+**修改字符集设置\(MySql\)**:可以先输入查询语句SHOW VARIABLES LIKE ‘character\_set\_%’;查看所有的编码是否是UTF-8.
 
 如果不是,可以使用Server Instance Config 把默认的字符集设置为utf-8或者修改/MySQL/MySQL Server 5.0/my.ini中的default-character-set=gbk,character-set-server=gbk改成utf-8;然后重新启动mysql的服务;
 
@@ -65,7 +65,7 @@ ISO-8859-1不支持汉字,即使是GBK这种支持汉字的通过他们编码再
 * 或者使用HTML标签来声明
 
 ```
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 ```
 
 * 借用工具
